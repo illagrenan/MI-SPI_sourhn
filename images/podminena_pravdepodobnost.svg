@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="250.02434"
+   height="125.11131"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="podminena_pravdepodobnost.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient5217"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5219" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="123.39869"
+     inkscape:cy="49.86064"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-34.319416,-192.35744)">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.96035421px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2985"
+       width="223.28336"
+       height="119.23764"
+       x="60.589333"
+       y="197.7533" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="33.335041"
+       y="213.93556"
+       id="text3759"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3761"
+         x="33.335041"
+         y="213.93556"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cambria Math;-inkscape-font-specification:Cambria Math">Ω</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="71.891884"
+       y="233.5266"
+       id="text3759-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3761-7"
+         x="71.891884"
+         y="233.5266"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cambria Math;-inkscape-font-specification:Cambria Math">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="241.45203"
+       y="234.52538"
+       id="text3759-1-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3761-7-4"
+         x="241.45203"
+         y="234.52538"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cambria Math;-inkscape-font-specification:Cambria Math">B</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1"
+       id="path2991"
+       sodipodi:cx="77.5"
+       sodipodi:cy="80.8256"
+       sodipodi:rx="36.785713"
+       sodipodi:ry="33.57143"
+       d="m 114.28571,80.8256 a 36.785713,33.57143 0 1 1 -73.571423,0 36.785713,33.57143 0 1 1 73.571423,0 z"
+       transform="matrix(1.6079505,0,0,1.006584,2.5603983,190.21814)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffaaaa;fill-opacity:0.40211639;fill-rule:nonzero;stroke:#000000;stroke-opacity:1"
+       id="path2991-1"
+       sodipodi:cx="77.5"
+       sodipodi:cy="80.8256"
+       sodipodi:rx="36.785713"
+       sodipodi:ry="33.57143"
+       d="m 114.28571,80.8256 a 36.785713,33.57143 0 1 1 -73.571423,0 36.785713,33.57143 0 1 1 73.571423,0 z"
+       transform="matrix(1.6079505,0,0,1.006584,87.560396,190.21814)" />
+    <path
+       style="fill:#ff9955;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.71428572999999995;stroke-opacity:1"
+       d="m 132.98156,99.907614 c -9.15002,-6.098015 -14.35089,-15.842978 -12.8052,-23.993348 1.12021,-5.906823 4.12549,-10.251827 10.90428,-15.765266 l 4.15087,-3.376058 3.23162,2.320773 c 4.2444,3.048096 8.32671,7.530599 10.36782,11.384174 1.32155,2.495075 1.64795,4.244036 1.65788,8.883427 0.0116,5.403386 -0.15552,6.04963 -2.58557,10 -2.54921,4.144092 -10.46954,11.723294 -12.25093,11.723294 -0.49758,0 -1.69943,-0.52965 -2.67077,-1.176996 z"
+       id="path5223"
+       inkscape:connector-curvature="0"
+       transform="translate(34.319416,192.35744)" />
+  </g>
+</svg>

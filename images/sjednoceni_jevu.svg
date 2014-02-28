@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="250.02434"
+   height="125.11131"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="sjednoceni_jevu.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="74.572625"
+     inkscape:cy="148.0267"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-34.319416,-192.35744)">
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.96035421px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2985"
+       width="223.28336"
+       height="119.23764"
+       x="60.589333"
+       y="197.7533" />
+    <path
+       style="fill:#e9afaf;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.80706668;stroke-opacity:1"
+       d="m 136.84512,227.42232 c -24.04263,0 -43.53125,17.21558 -43.53125,38.46875 0,21.25317 19.48862,38.5 43.53125,38.5 13.23369,0 25.0783,-5.23108 33.0625,-13.46875 -6.49949,-6.72325 -10.4375,-15.43172 -10.4375,-24.96875 0,-9.5595 3.94179,-18.30163 10.46875,-25.03125 -7.9845,-8.25609 -19.84298,-13.5 -33.09375,-13.5 z m 33.09375,13.5 c 6.50284,6.72403 10.4375,15.42897 10.4375,24.96875 0,9.55487 -3.94746,18.30294 -10.46875,25.03125 7.98455,8.25944 19.83988,13.5 33.09375,13.5 24.04263,0 43.53125,-17.21558 43.53125,-38.46875 0,-21.25317 -19.48862,-38.5 -43.53125,-38.5 -13.22845,0 -25.07839,5.23673 -33.0625,13.46875 z"
+       id="path3757"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="33.335041"
+       y="213.93556"
+       id="text3759"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3761"
+         x="33.335041"
+         y="213.93556"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cambria Math;-inkscape-font-specification:Cambria Math">Ω</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="71.891884"
+       y="233.5266"
+       id="text3759-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3761-7"
+         x="71.891884"
+         y="233.5266"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cambria Math;-inkscape-font-specification:Cambria Math">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="241.45203"
+       y="234.52538"
+       id="text3759-1-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3761-7-4"
+         x="241.45203"
+         y="234.52538"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cambria Math;-inkscape-font-specification:Cambria Math">B</tspan></text>
+    <path
+       style="fill:#ff9955;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.01015258000000000;stroke-opacity:1"
+       d="m 133.16721,93.852108 c -3.80629,-4.523516 -6.74323,-13.334254 -6.74323,-20.229471 0,-7.053847 3.06496,-16.055701 6.93313,-20.362731 l 2.66332,-2.965476 3.12307,4.845574 c 4.35131,6.751237 5.46474,10.60724 5.45336,18.885909 -0.0102,7.412503 -2.51212,14.751065 -6.95444,20.398551 l -1.92953,2.453009 -2.54568,-3.025365 z"
+       id="path3012"
+       inkscape:connector-curvature="0"
+       transform="translate(34.319416,192.35744)" />
+  </g>
+</svg>
