@@ -48,7 +48,7 @@
 \graphics default
 \default_output_format default
 \output_sync 1
-\bibtex_command biber
+\bibtex_command bibtex8
 \index_command default
 \float_placement H
 \paperfontsize default
@@ -222,7 +222,7 @@ centering
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/drawing.svg
+	filename images/pravdepodobnost_jevu.svg
 	scale 70
 
 \end_inset
@@ -286,7 +286,7 @@ centering
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/drawing - Copy.svg
+	filename images/pravdepodobnost_doplnku_jevu.svg
 	scale 70
 
 \end_inset
@@ -316,10 +316,24 @@ Sjednocení jevů
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 Pro disjunktní jevy platí
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 P\left(A\cup B\right)=P\left(A\right)+P\left(B\right)\text{.}
@@ -330,7 +344,7 @@ P\left(A\cup B\right)=P\left(A\right)+P\left(B\right)\text{.}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
@@ -379,11 +393,30 @@ Disjunktní jevy
 
 \end_layout
 
-\begin_layout Standard
-Pro jevy platní
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Pro jevy platní
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 P\left(A\cup B\right)=P\left(A\right)+P\left(B\right)-P\left(A\cap B\right)\text{.}
@@ -394,12 +427,12 @@ P\left(A\cup B\right)=P\left(A\right)+P\left(B\right)-P\left(A\cap B\right)\text
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Oblast průniku by byla započítána dvakrát, proto je potřeba ji odečíst.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
@@ -448,11 +481,30 @@ Jevy
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Podmíněná pravděpodobnost
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 P\left(A|B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}\text{,}~P\left(B\right)\neq0
@@ -463,7 +515,7 @@ P\left(A|B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}\text{,}~P\left(B
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 \begin_inset Quotes gld
 \end_inset
@@ -487,7 +539,7 @@ Pravděpodobnost jevu
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
@@ -536,6 +588,11 @@ Podmíněná pravděpodobnost
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Nezávislost jevů (průnik)
 \end_layout
@@ -571,6 +628,271 @@ P\left(A\cap B\right) & = & P\left(B|A\right)P\left(A\right)
 
 \begin_layout Subsection
 Bayessova věta
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+P\left(\male|\bullet\right)=P\left(\bullet|\male\right)*P\left(\male\right)=P\left(\male\right)*P\left(\bullet|\male\right)=0,7*0,2=\uuline{0,14}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/bayessova_veta.svg
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Bayessova věta pomocí stromu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Rozdělení pravděpodobnosti
+\end_layout
+
+\begin_layout Subsection
+Diskrétní rozdělení
+\end_layout
+
+\begin_layout Subsubsection
+Bernoulliho rozdělení
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsubsection
+Binomické rozdělení
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsubsection
+Geometrické rozdělení
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+T & \sim & geom\left(p\right)\\
+P\left(T>n\right) & = & \left(1-p\right)^{n}\\
+P\left(T=k\right) & = & \left(1-p\right)^{k-1}*p\\
+P\left(T\leq n\right) & = & 1-\left(1-p\right)^{n}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Poissonovo rozdělení
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsection
+Spojité rozdělení
+\end_layout
+
+\begin_layout Subsubsection
+Rovnoměrné rozdělení
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsubsection
+Exponenciální rozdělení
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+X & \sim & exp\left(\lambda\right)\\
+f\left(x\right) & = & \lambda e^{-\lambda x}\text{,}~x\geq0\\
+P\left(X\leq x\right) & = & 1-e^{-\lambda x}\\
+\text{E}X & = & \frac{1}{\lambda}\\
+\text{var}X & = & \frac{1}{\lambda^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+P\left(\male|\bullet\right)=P\left(\bullet|\male\right)*P\left(\male\right)=P\left(\male\right)*P\left(\bullet|\male\right)=0,7*0,2=\uuline{0,14}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/Exponential_cdf.svg
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Graf distribuční funkce exponenciálního rozdělení
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wikipedia"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Normální (gaussovo) rozdělení
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "spi_ref"
+options "plain"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
