@@ -884,6 +884,89 @@ Normální (gaussovo) rozdělení
 TODO
 \end_layout
 
+\begin_layout Section
+Entropie
+\end_layout
+
+\begin_layout Standard
+Pro entropii platí aditivita entropie
+\begin_inset Formula 
+\[
+H\left(X,Y\right)=H\left(X\right)+H\left(Y|X\right)\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Diskrétní veličiny
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H\left(X\right)=-\sum p_{i}\log p_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Spojité veličiny
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H\left(X\right)=-\int f\left(x\right)\log f\left(x\right)\text{d}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sdružená entropie
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H\left(X,Y\right)=-\sum_{i,j}p_{i,j}\log p_{i,j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Podmíněná entropie
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H\left(X|Y\right)=-\sum_{i,j}p\left(x_{i},y_{i}\right)\log p\left(y_{i}|x_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
