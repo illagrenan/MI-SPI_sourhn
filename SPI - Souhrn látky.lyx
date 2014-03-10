@@ -789,7 +789,7 @@ status open
 \mathbb{E}\left(aX+Y\right) & = & a\mathbb{E}\left(X\right)+\mathbb{E}\left(Y\right)~\text{(linearita)}\\
 \mathbb{E}\left(X+Y\right) & = & \mathbb{E}\left(X\right)+\mathbb{E}\left(Y\right)\\
 \mathbb{E}\left(X+Y\right) & = & \mathbb{E}\left(max\left\{ X,\, Y\right\} \right)+\mathbb{E}\left(min\left\{ X,\, Y\right\} \right)\\
-\mathbb{E}X^{2} & = & \sum_{i}p_{i}x_{i}^{2}\\
+\mathbb{E}X^{2} & = & \sum_{i}p_{i}x_{i}^{2}\,\text{(pro diskrétní jevy)}\\
 \mathbb{E}\left(\text{max}\left\{ X,\, Y\right\} \right) & = & \mathbb{E}\left(X\right)+E\left(Y\right)-\mathbb{E}\left(\text{min}\left\{ X,\, Y\right\} \right)\\
 \mathbb{E}\left(XY\right) & = & \mathbb{E}X*\mathbb{E}Y\,\text{(platí jen pro nezávislé jevy)}
 \end{eqnarray*}
@@ -811,7 +811,7 @@ Rozptyl
 \begin_layout Standard
 \begin_inset Formula 
 \[
-varX=EX^{2}-\left(EX\right)^{2}
+\sigma_{x}=varX=\mathbb{E}\left(X-\mathbb{E}X\right)^{2}=\mathbb{E}X^{2}-\left(\mathbb{E}X\right)^{2}
 \]
 
 \end_inset
