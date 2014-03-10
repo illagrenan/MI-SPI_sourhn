@@ -1229,19 +1229,7 @@ Entropie
 \end_layout
 
 \begin_layout Standard
-Pro entropii platí aditivita entropie
-\begin_inset Formula 
-\[
-H\left(X,Y\right)=H\left(X\right)+H\left(Y|X\right)\text{.}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Diskrétní veličiny
+Entropie diskrétní veličiny
 \end_layout
 
 \begin_layout Standard
@@ -1255,8 +1243,8 @@ H\left(X\right)=-\sum p_{i}\log p_{i}
 
 \end_layout
 
-\begin_layout Subsection
-Spojité veličiny
+\begin_layout Standard
+Entropie spojité veličiny
 \end_layout
 
 \begin_layout Standard
@@ -1270,7 +1258,19 @@ H\left(X\right)=-\int f\left(x\right)\log f\left(x\right)\text{d}x
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+Aditivita entropie
+\begin_inset Formula 
+\[
+H\left(X,Y\right)=H\left(X\right)+H\left(Y|X\right)\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Sdružená entropie
 \end_layout
 
@@ -1285,7 +1285,7 @@ H\left(X,Y\right)=-\sum_{i,j}p_{i,j}\log p_{i,j}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
 Podmíněná entropie
 \end_layout
 
@@ -1293,6 +1293,17 @@ Podmíněná entropie
 \begin_inset Formula 
 \[
 H\left(X|Y\right)=-\sum_{i,j}p\left(x_{i},y_{i}\right)\log p\left(y_{i}|x_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I\left(X,\, Y\right)=\sum_{i,\, j}p_{i,j}\text{log}\frac{p_{i,j}}{p_{i}*p_{j}}=\ldots=-H\left(X|Y\right)+H\left(X\right)
 \]
 
 \end_inset
