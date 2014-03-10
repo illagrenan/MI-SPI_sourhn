@@ -1154,31 +1154,13 @@ P\left(X\leq x\right) & = & 1-e^{-\lambda x}\\
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\[
-P\left(\male|\bullet\right)=P\left(\bullet|\male\right)*P\left(\male\right)=P\left(\male\right)*P\left(\bullet|\male\right)=0,7*0,2=\uuline{0,14}
-\]
-
+\begin_inset VSpace defskip
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1218,11 +1200,6 @@ Graf distribuční funkce exponenciálního rozdělení
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Wikipedia"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
