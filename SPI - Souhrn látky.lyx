@@ -413,7 +413,7 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
-Pro jevy platní
+Pro jevy platí
 \end_layout
 
 \begin_layout Plain Layout
@@ -605,7 +605,7 @@ nezávislé
  jevy platí
 \begin_inset Formula 
 \[
-P\left(A\cap B\right)=P\left(A\right)*P\left(B\right)\text{.}
+\mathbb{P}\left(A\cap B\right)=\mathbb{P}\left(A\right)*\mathbb{P}\left(B\right)\text{.}
 \]
 
 \end_inset
@@ -617,8 +617,9 @@ P\left(A\cap B\right)=P\left(A\right)*P\left(B\right)\text{.}
 Jinak platí
 \begin_inset Formula 
 \begin{eqnarray*}
-P\left(A\cap B\right) & = & P\left(A|B\right)P\left(B\right)\\
-P\left(A\cap B\right) & = & P\left(B|A\right)P\left(A\right)
+\mathbb{P}\left(A\cap B\right) & = & \mathbb{P}\left(A|B\right)\mathbb{P}\left(B\right)\\
+\mathbb{P}\left(A\cap B\right) & = & \mathbb{P}\left(B|A\right)\mathbb{P}\left(A\right)\\
+\mathbb{P}\left(A\cap B\cap C\ldots\right) & = & \mathbb{P}\left(A\right)\mathbb{P}\left(B|A\right)\mathbb{P}\left(C|A\cap B\right)\ldots
 \end{eqnarray*}
 
 \end_inset
@@ -628,6 +629,17 @@ P\left(A\cap B\right) & = & P\left(B|A\right)P\left(A\right)
 
 \begin_layout Subsection
 Bayessova věta
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{P}\left(A|B\right)=\frac{\mathbb{P}\left(B|A\right)\mathbb{P}\left(A\right)}{\mathbb{P}\left(B\right)}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -647,7 +659,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-P\left(\male|\bullet\right)=P\left(\bullet|\male\right)*P\left(\male\right)=P\left(\male\right)*P\left(\bullet|\male\right)=0,7*0,2=\uuline{0,14}
+\mathbb{P}\left(\male|\bullet\right)=\mathbb{P}\left(\bullet|\male\right)*\mathbb{P}\left(\male\right)=\mathbb{P}\left(\male\right)*\mathbb{P}\left(\bullet|\male\right)=0,7*0,2=\uuline{0,14}
 \]
 
 \end_inset
@@ -714,7 +726,123 @@ Rozdělení pravděpodobnosti
 \end_layout
 
 \begin_layout Subsection
-Diskrétní rozdělení
+Rozptyl a střední hodnota
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+EX & = & \sum_{i}p_{i}x_{i}=\sum_{i}x_{i}*P\left(X=x_{i}\right)\\
+EX & = & \sum_{i}f_{i}x_{i}=\sum_{i}x_{i}*f_{i}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P$
+\end_inset
+
+ a 
+\begin_inset Formula $f$
+\end_inset
+
+ jsou hustoty.
+\end_layout
+
+\begin_layout Standard
+Pro libovolné náhodné veličiny platí:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray*}
+E\left(aX+Y\right) & = & aE\left(X\right)+E\left(Y\right)\\
+E\left(X+Y\right) & = & E\left(X\right)+E\left(Y\right)\\
+E\left(X+Y\right) & = & E\left(max\left\{ X,Y\right\} \right)+E\left(min\left\{ X,Y\right\} \right)\\
+EX^{2} & = & \sum_{i}p_{i}x_{i}^{2}\\
+E(max(x,y)) & = & E(x)+E(Y)-E(min(x,y))\\
+EXY & = & EXEY~\text{(platí jen pro nezávislé jevy)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+varX=EX^{2}-\left(EX\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Hustota a distribuční funkce
+\end_layout
+
+\begin_layout Standard
+Funkce hustoty
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+p/f & = & P(Z=x_{i})\\
+f(x) & = & F_{x}^{'}(x)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Distribuční funkce
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F=P(X\leq x_{i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Diskrétní (nespojité) rozdělení
+\end_layout
+
+\begin_layout Standard
+Diskrétní veličiny mohou nabývat pou ze spočetného počtu hodnot (i nekonečného).
 \end_layout
 
 \begin_layout Subsubsection
@@ -738,6 +866,32 @@ Geometrické rozdělení
 \end_layout
 
 \begin_layout Standard
+\begin_inset Quotes gld
+\end_inset
+
+Počet hodů mincí než padne první panna.
+ Tedy čekání na úspěch.
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{eqnarray*}
 T & \sim & geom\left(p\right)\\
@@ -745,6 +899,24 @@ P\left(T>n\right) & = & \left(1-p\right)^{n}\\
 P\left(T=k\right) & = & \left(1-p\right)^{k-1}*p\\
 P\left(T\leq n\right) & = & 1-\left(1-p\right)^{n}
 \end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+EX & = & \frac{1}{p}\\
+varX & = & \frac{1}{p}\left(\frac{1}{p}-1\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -763,6 +935,11 @@ TODO
 Spojité rozdělení
 \end_layout
 
+\begin_layout Standard
+Spojité náhodné veličiny nabývají na rozdíl od diskrétních veličin nějakého
+ intervalu.
+\end_layout
+
 \begin_layout Subsubsection
 Rovnoměrné rozdělení
 \end_layout
@@ -776,6 +953,20 @@ Exponenciální rozdělení
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{eqnarray*}
 X & \sim & exp\left(\lambda\right)\\
@@ -784,6 +975,11 @@ P\left(X\leq x\right) & = & 1-e^{-\lambda x}\\
 \text{E}X & = & \frac{1}{\lambda}\\
 \text{var}X & = & \frac{1}{\lambda^{2}}
 \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -954,6 +1150,54 @@ Podmíněná entropie
 \[
 H\left(X|Y\right)=-\sum_{i,j}p\left(x_{i},y_{i}\right)\log p\left(y_{i}|x_{i}\right)
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Náhodné procesy
+\end_layout
+
+\begin_layout Standard
+Značení procesu
+\begin_inset Formula 
+\[
+X\left(t,~\omega\right)=X_{t}=X\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Střední hodnota
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\eta_{x}\left(t\right) & = & \mathbb{E}X\left(t\right)=\int x\left(t\right)*f_{X_{t}}\left(x\right)\text{d}x\\
+ &  & \mathbb{E}X\left(t\right)=\sum x_{i}\left(t\right)\mathbb{P}\left(X_{t}=x_{i}\left(t\right)\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Autokorelační funkce
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{x}\left(t_{1},~t_{2}\right) & = & \mathbb{E}X\left(t_{1}\right)*\overline{X\left(t_{2}\right)}~\text{v}~\mathbb{C}\\
+ & = & \mathbb{E}X\left(t_{1}\right)*X\left(t_{2}\right)~\text{v}~\mathbb{R}
+\end{eqnarray*}
 
 \end_inset
 
