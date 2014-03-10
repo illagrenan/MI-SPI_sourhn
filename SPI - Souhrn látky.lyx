@@ -1,4 +1,4 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
 \lyxformat 413
 \begin_document
 \begin_header
@@ -46,6 +46,7 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
+
 \graphics default
 \default_output_format default
 \output_sync 1
@@ -68,8 +69,8 @@
 \use_geometry true
 \use_amsmath 1
 \use_esint 1
-\use_mathdots 1
 \use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
 \use_indices false
@@ -182,7 +183,7 @@ Pravděpodobnost jevu a jeho doplňku
 \begin_layout Standard
 \begin_inset Formula 
 \[
-P\left(A\right)=\frac{size\left(A\right)}{size\left(\Omega\right)}
+\mathbb{P}\left(A\right)=\frac{size\left(A\right)}{size\left(\Omega\right)}
 \]
 
 \end_inset
@@ -246,7 +247,7 @@ Vennův diagram základní pravděpodobnosti jevu
 \begin_layout Standard
 \begin_inset Formula 
 \[
-P\left(A^{C}\right)=1-P\left(A\right)
+\mathbb{P}\left(A^{C}\right)=1-\mathbb{P}\left(A\right)
 \]
 
 \end_inset
@@ -328,7 +329,7 @@ Pro disjunktní jevy platí
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-P\left(A\cup B\right)=P\left(A\right)+P\left(B\right)\text{.}
+\mathbb{P}\left(A\cup B\right)=\mathbb{P}\left(A\right)+\mathbb{P}\left(B\right)\text{.}
 \]
 
 \end_inset
@@ -411,7 +412,7 @@ Pro jevy platí
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-P\left(A\cup B\right)=P\left(A\right)+P\left(B\right)-P\left(A\cap B\right)\text{.}
+\mathbb{P}\left(A\cup B\right)=\mathbb{P}\left(A\right)+\mathbb{P}\left(B\right)-\mathbb{P}\left(A\cap B\right)\text{.}
 \]
 
 \end_inset
@@ -499,7 +500,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-P\left(A|B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}\text{,}~P\left(B\right)\neq0
+\mathbb{P}\left(A|B\right)=\frac{\mathbb{P}\left(A\cap B\right)}{\mathbb{P}\left(B\right)}\text{,}\,\mathbb{P}\left(B\right)\neq0
 \]
 
 \end_inset
@@ -785,12 +786,12 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{eqnarray*}
-E\left(aX+Y\right) & = & aE\left(X\right)+E\left(Y\right)~\text{(linearita)}\\
-E\left(X+Y\right) & = & E\left(X\right)+E\left(Y\right)\\
-E\left(X+Y\right) & = & E\left(max\left\{ X,Y\right\} \right)+E\left(min\left\{ X,Y\right\} \right)\\
-EX^{2} & = & \sum_{i}p_{i}x_{i}^{2}\\
-E(max(x,y)) & = & E(x)+E(Y)-E(min(x,y))\\
-EXY & = & EXEY~\text{(platí jen pro nezávislé jevy)}
+\mathbb{E}\left(aX+Y\right) & = & a\mathbb{E}\left(X\right)+\mathbb{E}\left(Y\right)~\text{(linearita)}\\
+\mathbb{E}\left(X+Y\right) & = & \mathbb{E}\left(X\right)+\mathbb{E}\left(Y\right)\\
+\mathbb{E}\left(X+Y\right) & = & \mathbb{E}\left(max\left\{ X,\, Y\right\} \right)+\mathbb{E}\left(min\left\{ X,\, Y\right\} \right)\\
+\mathbb{E}X^{2} & = & \sum_{i}p_{i}x_{i}^{2}\\
+\mathbb{E}\left(\text{max}\left\{ X,\, Y\right\} \right) & = & \mathbb{E}\left(X\right)+E\left(Y\right)-\mathbb{E}\left(\text{min}\left\{ X,\, Y\right\} \right)\\
+\mathbb{E}\left(XY\right) & = & \mathbb{E}X*\mathbb{E}Y\,\text{(platí jen pro nezávislé jevy)}
 \end{eqnarray*}
 
 \end_inset
@@ -830,7 +831,7 @@ Funkce je zprava spojitá.
 Distribuční funkce pro diskrétní veličiny
 \begin_inset Formula 
 \begin{eqnarray*}
-F & = & P(X\leq x_{i})=\sum_{x_{i}\leq x}p_{x}\left(x_{i}\right)
+F & = & \mathbb{P}(X\leq x_{i})=\sum_{x_{i}\leq x}p_{x}\left(x_{i}\right)
 \end{eqnarray*}
 
 \end_inset
@@ -845,7 +846,7 @@ Distribuční funkce pro spojité veličiny
 \begin_layout Standard
 \begin_inset Formula 
 \[
-F=P(X\leq x_{i})=\intop_{-\infty}^{x}f_{x}\left(u\right)\text{d}u~\forall x\in\mathbb{R}
+F=\mathbb{P}(X\leq x_{i})=\intop_{-\infty}^{x}f_{x}\left(u\right)\text{d}u~\forall x\in\mathbb{R}
 \]
 
 \end_inset
@@ -861,7 +862,7 @@ Hustota
 Funkce hustoty pro diskrétní veličiny
 \begin_inset Formula 
 \[
-p\left(X\right)=P\left(X=x\right)
+p\left(X\right)=\mathbb{P}\left(X=x\right)
 \]
 
 \end_inset
@@ -927,7 +928,7 @@ Hustota
 Střední hodnota
 \begin_inset Formula 
 \[
-\mathtt{E}X=p
+\mathbb{E}X=p
 \]
 
 \end_inset
@@ -966,7 +967,7 @@ X\sim Bi\left(n,~p\right)
 Hustota
 \begin_inset Formula 
 \[
-P_{X}\left(k\right)=\binom{n}{k}p^{k}\left(1-p\right)^{n-k}
+\mathbb{P}_{X}\left(k\right)=\binom{n}{k}p^{k}\left(1-p\right)^{n-k}
 \]
 
 \end_inset
@@ -982,7 +983,7 @@ P_{X}\left(k\right)=\binom{n}{k}p^{k}\left(1-p\right)^{n-k}
 Střední hodnota
 \begin_inset Formula 
 \[
-\mathtt{E}X=n*p
+\mathbb{E}X=n*p
 \]
 
 \end_inset
@@ -994,7 +995,7 @@ Střední hodnota
 Rozptyl
 \begin_inset Formula 
 \[
-varX=p\left(1-p\right)
+varX=np\left(1-p\right)
 \]
 
 \end_inset
@@ -1007,6 +1008,17 @@ Geometrické rozdělení
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\[
+X\sim geom\left(p\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 \begin_inset Quotes gld
 \end_inset
 
@@ -1019,45 +1031,59 @@ Počet hodů mincí než padne první panna.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
+Hustota
 \begin_inset Formula 
-\begin{eqnarray*}
-T & \sim & geom\left(p\right)\\
-P\left(T>n\right) & = & \left(1-p\right)^{n}\\
-P\left(T=k\right) & = & \left(1-p\right)^{k-1}*p\\
-P\left(T\leq n\right) & = & 1-\left(1-p\right)^{n}
-\end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula 
-\begin{eqnarray*}
-EX & = & \frac{1}{p}\\
-varX & = & \frac{1}{p}\left(\frac{1}{p}-1\right)
-\end{eqnarray*}
+\[
+\mathbb{P}_{x}\left(k\right)=\left(1-p\right)^{k-1}*p
+\]
 
 \end_inset
 
 
 \end_layout
+
+\begin_layout Standard
+Distribuční funkce
+\begin_inset Formula 
+\[
+\mathbb{P}\left(T\leq n\right)=1-\left(1-p\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Funkce přežití
+\begin_inset Formula 
+\[
+\mathbb{P}\left(T>n\right)=\left(1-p\right)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Střední hodnota
+\begin_inset Formula 
+\[
+\mathbb{E}X=\frac{1}{p}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Rozptyl
+\begin_inset Formula 
+\[
+varX=\frac{1}{p}\left(\frac{1}{p}-1\right)
+\]
 
 \end_inset
 
@@ -1113,7 +1139,7 @@ status open
 X & \sim & exp\left(\lambda\right)\\
 f\left(x\right) & = & \lambda e^{-\lambda x}\text{,}~x\geq0\\
 P\left(X\leq x\right) & = & 1-e^{-\lambda x}\\
-\text{E}X & = & \frac{1}{\lambda}\\
+\mathbb{E}X & = & \frac{1}{\lambda}\\
 \text{var}X & = & \frac{1}{\lambda^{2}}
 \end{eqnarray*}
 
