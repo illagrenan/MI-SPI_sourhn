@@ -1235,7 +1235,7 @@ Entropie diskrétní veličiny
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H\left(X\right)=-\sum p_{i}\log p_{i}
+\boxed{H\left(X\right)=-\sum p_{i}\log p_{i}}
 \]
 
 \end_inset
@@ -1250,7 +1250,7 @@ Entropie spojité veličiny
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H\left(X\right)=-\int f\left(x\right)\log f\left(x\right)\text{d}x
+\boxed{H\left(X\right)=-\int f\left(x\right)\log f\left(x\right)\text{d}x}
 \]
 
 \end_inset
@@ -1261,9 +1261,10 @@ H\left(X\right)=-\int f\left(x\right)\log f\left(x\right)\text{d}x
 \begin_layout Standard
 Aditivita entropie
 \begin_inset Formula 
-\[
-H\left(X,Y\right)=H\left(X\right)+H\left(Y|X\right)\text{.}
-\]
+\begin{eqnarray*}
+H\left(X,Y\right) & = & H\left(X\right)+H\left(Y|X\right)\\
+H\left(X,Y\right) & = & H\left(X\right)+H\left(Y\right)\text{\,(pro nezávislé náhodné veličiny)}
+\end{eqnarray*}
 
 \end_inset
 
@@ -1290,9 +1291,74 @@ Podmíněná entropie
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray*}
+H\left(X|Y\right) & = & -\sum_{i,j}p\left(x_{i},y_{i}\right)\log p\left(y_{i}|x_{i}\right)\\
+\mathbb{P}\left(x_{i}|y_{j}\right) & = & \frac{\mathbb{P}\left(x_{i},\, y_{j}\right)}{\mathbb{P}\left(y_{i}\right)}\\
+\mathbb{P}\left(X,\, Y\right) & = & \mathbb{P}\left(X|Y\right)*\mathbb{P}\left(Y\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Vzájemná informace
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray*}
+I\left(X;\, Y\right) & = & H\left(X\right)-H\left(X|Y\right)\\
+I\left(X;\, Y\right) & = & H\left(Y\right)-H\left(Y|X\right)\\
+I\left(X;\, Y\right) & = & H\left(X\right)+H\left(Y\right)-H\left(X,\, Y\right)\\
+I\left(X;\, Y\right) & = & I\left(Y;\, X\right)\\
+I\left(X;\, X\right) & = & H\left(X\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
-H\left(X|Y\right)=-\sum_{i,j}p\left(x_{i},y_{i}\right)\log p\left(y_{i}|x_{i}\right)
+I\left(X,\, Y\right)=\sum_{i,\, j}p_{i,j}\text{log}\frac{p_{i,j}}{p_{i}*p_{j}}=\ldots=H\left(X\right)-H\left(X|Y\right)
 \]
 
 \end_inset
@@ -1300,11 +1366,134 @@ H\left(X|Y\right)=-\sum_{i,j}p\left(x_{i},y_{i}\right)\log p\left(y_{i}|x_{i}\ri
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/entropie_vzajemna_informace.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Vzájemná informace a entropie
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Kódování
+\end_layout
+
+\begin_layout Standard
+Střední délka kódového slova
+\end_layout
+
 \begin_layout Standard
 \begin_inset Formula 
 \[
-I\left(X,\, Y\right)=\sum_{i,\, j}p_{i,j}\text{log}\frac{p_{i,j}}{p_{i}*p_{j}}=\ldots=-H\left(X|Y\right)+H\left(X\right)
+L\left(C\right)=\mathbb{E}\ell\left(X\right)=\sum_{i}\ell\left(x_{i}\right)*\mathbb{P}\left(X=x_{i}\right)
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Suma
+\end_layout
+
+\begin_layout Standard
+Výpočet sumy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\sum_{n=0}^{\infty}r^{n} & = & \frac{1}{1-r}\\
+\sum_{n=0}^{\infty}n*r^{n} & = & \frac{r}{\left(1-r\right)^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Logaritmus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray*}
+\log_{a}\left(x_{1}*x_{2}\right) & = & \log_{a}x_{1}+\log_{a}x_{2}\\
+\log_{a}\left(\frac{x_{1}}{x_{2}}\right) & = & \log_{a}x_{1}-\log_{a}x_{2}\\
+\log_{a}x^{r} & = & r*\log_{a}x\\
+\log_{a}a & = & 1\\
+\log_{a}1 & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 

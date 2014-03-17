@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="241.16312"
+   height="104.67265"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="entropie_vzajemna_informace.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient5217"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5219" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="109.14322"
+     inkscape:cy="57.293941"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-52.870476,-228.00156)">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="51.688835"
+       y="242.11288"
+       id="text3759-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3761-7"
+         x="51.688835"
+         y="242.11288"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cambria Math;-inkscape-font-specification:Cambria Math">H(X)</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="fill:#dae5ff;stroke:#000000;stroke-opacity:1;fill-opacity:1"
+       id="path2991"
+       sodipodi:cx="77.5"
+       sodipodi:cy="80.8256"
+       sodipodi:rx="36.785713"
+       sodipodi:ry="33.57143"
+       d="m 114.28571,80.8256 c 0,18.540989 -16.469522,33.57143 -36.78571,33.57143 -20.316188,0 -36.785713,-15.030441 -36.785713,-33.57143 0,-18.540989 16.469525,-33.571431 36.785713,-33.571431 20.316188,0 36.78571,15.030442 36.78571,33.571431 z"
+       transform="matrix(1.8848001,0,0,1.4000261,-8.5352284,171.80246)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffaaaa;fill-opacity:0.40211636;fill-rule:nonzero;stroke:#000000;stroke-opacity:1"
+       id="path2991-1"
+       sodipodi:cx="77.5"
+       sodipodi:cy="80.8256"
+       sodipodi:rx="36.785713"
+       sodipodi:ry="33.57143"
+       d="m 114.28571,80.8256 c 0,18.540989 -16.469522,33.57143 -36.78571,33.57143 -20.316188,0 -36.785713,-15.030441 -36.785713,-33.57143 0,-18.540989 16.469525,-33.571431 36.785713,-33.571431 20.316188,0 36.78571,15.030442 36.78571,33.571431 z"
+       transform="matrix(1.8848001,0,0,1.4000261,65.845866,171.80246)" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="254.01407"
+       y="242.11288"
+       id="text3759-1-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3761-7-7"
+         x="254.01407"
+         y="242.11288"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cambria Math;-inkscape-font-specification:Cambria Math">H(Y)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="77.88382"
+       y="289.80905"
+       id="text3759-1-1-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3761-7-7-0"
+         x="77.88382"
+         y="289.80905"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cambria Math;-inkscape-font-specification:Cambria Math">H(X|Y)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="216.45908"
+       y="289.80905"
+       id="text3759-1-1-4-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3761-7-7-0-4"
+         x="216.45908"
+         y="289.80905"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cambria Math;-inkscape-font-specification:Cambria Math">H(Y|X)</tspan></text>
+    <path
+       style="fill:#c5ffaa;stroke:#000000;stroke-width:1.62442887000000000;stroke-opacity:1;fill-opacity:1"
+       d="m 174.74137,245.30416 c -19.32812,8.34122 -32.15625,22.97324 -32.15625,39.65625 0,16.68301 12.82813,31.31503 32.15625,39.65625 19.31341,-8.34317 32.125,-22.98083 32.125,-39.65625 0,-16.67542 -12.81159,-31.31308 -32.125,-39.65625 z"
+       id="path2991-2"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="149.39859"
+       y="289.80905"
+       id="text3759-1-1-4-9-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3761-7-7-0-4-8"
+         x="149.39859"
+         y="289.80905"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cambria Math;-inkscape-font-specification:Cambria Math">I(X;Y)</tspan></text>
+  </g>
+</svg>
