@@ -1577,6 +1577,7 @@ Střední hodnota
 \end_layout
 
 \begin_layout Standard
+\align center
 (Pokud je střední hodnota 
 \series bold
 nezávislá
@@ -1585,7 +1586,28 @@ nezávislá
 \begin_inset Formula $t$
 \end_inset
 
- je proces stacionární v průměru.)
+, 
+\series bold
+ je proces stacionární
+\series default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+stacionarita procesu
+\end_layout
+
+\end_inset
+
+ v průměru.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1687,10 +1709,6 @@ R_{x}\left(t_{1},\, t_{2}\right) & = & \mathbb{E}\left[X\left(t_{1}\right)*X\lef
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \begin_layout Standard
