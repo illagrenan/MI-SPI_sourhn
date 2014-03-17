@@ -854,6 +854,19 @@ F=\mathbb{P}(X\leq x_{i})=\intop_{-\infty}^{x}f_{x}\left(u\right)\text{d}u~\fora
 
 \end_layout
 
+\begin_layout Standard
+\align center
+(
+\begin_inset Formula $X$
+\end_inset
+
+ je náhodná veličina, 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ je číslo)
+\end_layout
+
 \begin_layout Subsection
 Hustota
 \end_layout
@@ -1235,7 +1248,7 @@ Entropie diskrétní veličiny
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\boxed{H\left(X\right)=-\sum p_{i}\log p_{i}}
+\boxed{H_{b}\left(X\right)=-\sum p_{i}\log_{b}p_{i}}
 \]
 
 \end_inset
@@ -1250,7 +1263,7 @@ Entropie spojité veličiny
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\boxed{H\left(X\right)=-\int f\left(x\right)\log f\left(x\right)\text{d}x}
+\boxed{H_{b}\left(X\right)=-\intop_{-\infty}^{+\infty}f\left(x\right)\log_{b}f\left(x\right)\text{d}x}
 \]
 
 \end_inset
@@ -1259,11 +1272,25 @@ Entropie spojité veličiny
 \end_layout
 
 \begin_layout Standard
+\align center
+(
+\begin_inset Formula $b$
+\end_inset
+
+ je základ abecedy pro kódová slova, nejčastěji používáme binární abecedu,
+ tedy 
+\begin_inset Formula $b=2$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
 Aditivita entropie
 \begin_inset Formula 
 \begin{eqnarray*}
 H\left(X,Y\right) & = & H\left(X\right)+H\left(Y|X\right)\\
-H\left(X,Y\right) & = & H\left(X\right)+H\left(Y\right)\text{\,(pro nezávislé náhodné veličiny)}
+H\left(X,Y\right) & = & H\left(X\right)+H\left(Y\right)\text{\,(speciálně jen pro nezávislé náhodné veličiny)}
 \end{eqnarray*}
 
 \end_inset
@@ -1287,6 +1314,15 @@ H\left(X,Y\right)=-\sum_{i,j}p_{i,j}\log p_{i,j}
 \end_layout
 
 \begin_layout Standard
+\align center
+(sdružená hustota 
+\begin_inset Formula $p_{i,j}=P\left(X=x_{i},\, Y=Y_{j}\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
 Podmíněná entropie
 \end_layout
 
@@ -1307,8 +1343,11 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{eqnarray*}
-H\left(X|Y\right) & = & -\sum_{i,j}p\left(x_{i},y_{i}\right)\log p\left(y_{i}|x_{i}\right)\\
-\mathbb{P}\left(x_{i}|y_{j}\right) & = & \frac{\mathbb{P}\left(x_{i},\, y_{j}\right)}{\mathbb{P}\left(y_{i}\right)}\\
+H\left(X|Y\right) & = & -\sum_{i,j}p\left(x_{i},y_{i}\right)\log p\left(y_{j}|x_{i}\right)\\
+\mathbb{P}\left(x_{i}|y_{j}\right) & = & \frac{\mathbb{P}\left(x_{i},\, y_{j}\right)}{\mathbb{P}\left(y_{i}\right)}\,\begin{array}{c}
+\text{sdružená hustota}\\
+\text{marginální hustota}
+\end{array}\\
 \mathbb{P}\left(X,\, Y\right) & = & \mathbb{P}\left(X|Y\right)*\mathbb{P}\left(Y\right)
 \end{eqnarray*}
 
@@ -1406,15 +1445,15 @@ centering
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Vzájemná informace a entropie
+Vzájemná informace a entropie (tedy 
+\begin_inset Formula $H\left(X,\, Y\right)$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1440,6 +1479,11 @@ L\left(C\right)=\mathbb{E}\ell\left(X\right)=\sum_{i}\ell\left(x_{i}\right)*\mat
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Kódování je optimální, pokdu je entropie menší než střední délka kódového
+ slova.
 \end_layout
 
 \begin_layout Subsection
@@ -1533,19 +1577,120 @@ Střední hodnota
 \end_layout
 
 \begin_layout Standard
+(Pokud je střední hodnota 
+\series bold
+nezávislá
+\series default
+ na 
+\begin_inset Formula $t$
+\end_inset
+
+ je proces stacionární v průměru.)
+\end_layout
+
+\begin_layout Standard
+Střední hodnota integrálu
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{E}\intop_{a}^{b}X\left(t\right)\text{d}t=\intop_{a}^{b}\mathbb{E}X\left(t\right)\text{d}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Autokorelační funkce
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-R_{x}\left(t_{1},~t_{2}\right) & = & \mathbb{E}X\left(t_{1}\right)*\overline{X\left(t_{2}\right)}~\text{v}~\mathbb{C}\\
- & = & \mathbb{E}X\left(t_{1}\right)*X\left(t_{2}\right)~\text{v}~\mathbb{R}
+R_{xx}\left(t_{1},~t_{2}\right) & = & \mathbb{E}\left[X\left(t_{1}\right)*\overline{X\left(t_{2}\right)}\right]~\text{v}~\mathbb{C}\\
+ & = & \mathbb{E}\left[X\left(t_{1}\right)*X\left(t_{2}\right)\right]=\sum_{i}x_{i}\left(t\right)*P\left(X\left(t_{1}\right)*X\left(t_{2}\right)=x_{i}\left(t\right)\right)~\text{v}~\mathbb{R}
 \end{eqnarray*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+V ukázkovém příkladu se autokorelační funkce spočítala pomocí následujícího
+ 
+\begin_inset Quotes gld
+\end_inset
+
+triku
+\begin_inset Quotes grd
+\end_inset
+
+ (
+\begin_inset Formula $0\leq t_{1}\leq t_{2}\leq2$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace -0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{x}\left(t_{1},\, t_{2}\right) & = & \mathbb{E}\left[X\left(t_{1}\right)*X\left(t_{2}\right)\right]=0*\mathbb{P}\left(X\left(t_{1}\right)*X\left(t_{2}\right)=0\right)+1*\mathbb{P}\left(X\left(t_{1}\right)*X\left(t_{2}\right)=1\right)\\
+ & = & \mathbb{P}\left(X\left(t_{1}\right)*X\left(t_{2}\right)=1\right)=\mathbb{P}\left(X\left(t_{1}\right)=1,\, X\left(t_{2}\right)=1\right)=\\
+ & = & \boxed{\mathbb{P}\left(t_{1}\leq A,\, t_{2}\leq A\right)=\mathbb{P}\left(A\geq t_{1},\, t_{2}\geq A\right)=P\left(A\geq t_{2}\right)}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Standard
