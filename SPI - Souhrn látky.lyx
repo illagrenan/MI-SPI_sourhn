@@ -1760,6 +1760,34 @@ maticí přechodů.
 Stacionární distribuce
 \end_layout
 
+\begin_layout Itemize
+Po čase se některé Markovovy řetězce ustálí v nějakém stavu.
+\end_layout
+
+\begin_layout Itemize
+Rovnovážná distribuce
+\begin_inset Formula 
+\[
+\pi:\,\pi=\pi*\mathbb{P}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Detailní rovnováha
+\begin_inset Formula 
+\[
+\pi_{i}p_{i,j}=\pi_{j}p_{j,i}\,\forall i,\, j
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
