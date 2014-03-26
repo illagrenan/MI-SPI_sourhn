@@ -1578,7 +1578,7 @@ Střední hodnota
 
 \begin_layout Standard
 \align center
-(Pokud je střední hodnota 
+Pokud je střední hodnota 
 \series bold
 nezávislá
 \series default
@@ -1600,7 +1600,16 @@ stacionarita procesu
 
 \end_inset
 
- v průměru.)
+ v průměru.
+ Tedy
+\begin_inset Formula 
+\[
+\eta\left(t\right)=\eta_{x}\,\forall t
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1709,6 +1718,46 @@ R_{x}\left(t_{1},\, t_{2}\right) & = & \mathbb{E}\left[X\left(t_{1}\right)*X\lef
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Markovovy řetězce
+\end_layout
+
+\begin_layout Standard
+Matice přechodů
+\begin_inset Formula 
+\[
+\mathbb{P}_{i,j}=p\left(i,\, j\right)=P\left(X_{n+1}=s_{j}|X_{n}=s_{i}\right)=p_{i,j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Markovova podmínka
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Standard
+Řetězec zapisujeme
+\end_layout
+
+\begin_layout Itemize
+diagramem,
+\end_layout
+
+\begin_layout Itemize
+maticí přechodů.
+\end_layout
+
+\begin_layout Subsection
+Stacionární distribuce
 \end_layout
 
 \begin_layout Standard
