@@ -778,6 +778,8 @@ centering
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Jev
 \end_layout
 
@@ -787,6 +789,8 @@ Jev
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Sjednocení (
 \begin_inset Formula $\cup$
 \end_inset
@@ -800,6 +804,8 @@ Sjednocení (
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Průnik (
 \begin_inset Formula $\cap$
 \end_inset
@@ -815,6 +821,8 @@ Průnik (
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Disjunktní jevy
 \end_layout
 
@@ -850,6 +858,8 @@ Disjunktní jevy
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Nedisjunktní jevy
 \end_layout
 
@@ -885,6 +895,8 @@ Nedisjunktní jevy
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Závislé jevy
 \end_layout
 
@@ -920,6 +932,8 @@ Závislé jevy
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Nezávislé jevy
 \end_layout
 
@@ -983,7 +997,11 @@ Vlastnosti
 \end_layout
 
 \begin_layout Subsection
-Střední hodnota
+Střední hodnota 
+\begin_inset Formula $\mathbb{E}X$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1051,7 +1069,7 @@ status open
 \begin_inset Formula 
 \begin{eqnarray*}
 \mathbb{E}\left(aX+Y\right) & = & a\mathbb{E}\left(X\right)+\mathbb{E}\left(Y\right)~\text{(linearita)}\\
-\mathbb{E}\left(X+Y\right) & = & \mathbb{E}\left(X\right)+\mathbb{E}\left(Y\right)\\
+\mathbb{E}\left(X\pm Y\right) & = & \mathbb{E}\left(X\right)\pm\mathbb{E}\left(Y\right)\\
 \mathbb{E}\left(X+Y\right) & = & \mathbb{E}\left(max\left\{ X,\, Y\right\} \right)+\mathbb{E}\left(min\left\{ X,\, Y\right\} \right)\\
 \mathbb{E}X^{2} & = & \sum_{i}p_{i}x_{i}^{2}\,\text{(pro diskrétní jevy)}\\
 \mathbb{E}\left(\text{max}\left\{ X,\, Y\right\} \right) & = & \mathbb{E}\left(X\right)+E\left(Y\right)-\mathbb{E}\left(\text{min}\left\{ X,\, Y\right\} \right)\\
@@ -1171,208 +1189,414 @@ Diskrétní (nespojité) rozdělení
 Diskrétní veličiny mohou nabývat pouze spočetného počtu hodnot (i nekonečného).
 \end_layout
 
-\begin_layout Subsubsection
-Bernoulliho rozdělení
-\end_layout
-
 \begin_layout Standard
-\begin_inset Formula 
-\[
-X\sim Be\left(p\right)
-\]
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Hustota
-\end_layout
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="2.5cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\mathbb{P}\left(1\right)=p,~\mathbb{P}\left(0\right)=1-p
-\]
+\begin_layout Plain Layout
+
+\series bold
+Rozdělení
+\end_layout
 
 \end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
+\begin_layout Plain Layout
 
+\series bold
+Funkce hustoty
 \end_layout
-
-\begin_layout Standard
-Střední hodnota
-\begin_inset Formula 
-\[
-\mathbb{E}X=p
-\]
 
 \end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
+\begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Standard
-Rozptyl
-\begin_inset Formula 
-\[
-varX=p\left(1-p\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Binomické rozdělení
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-X\sim Bi\left(n,~p\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Hustota
-\begin_inset Formula 
-\[
-\mathbb{P}_{X}\left(k\right)=\binom{n}{k}p^{k}\left(1-p\right)^{n-k}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-Střední hodnota
-\begin_inset Formula 
-\[
-\mathbb{E}X=n*p
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Rozptyl
-\begin_inset Formula 
-\[
-varX=np\left(1-p\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Geometrické rozdělení
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-X\sim geom\left(p\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Quotes gld
-\end_inset
-
-Počet hodů mincí než padne první panna.
- Tedy čekání na úspěch.
-\begin_inset Quotes grd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Hustota
-\begin_inset Formula 
-\[
-\mathbb{P}_{x}\left(k\right)=\left(1-p\right)^{k-1}*p
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\series bold
 Distribuční funkce
-\begin_inset Formula 
-\[
-\mathbb{P}\left(T\leq n\right)=1-\left(1-p\right)^{n}
-\]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $\mathbb{E}X$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $varX$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Bernoulliho, 
+\begin_inset Formula $X\sim Be\left(p\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbb{P}\left(0\right)=1-p,\,\mathbb{P}\left(1\right)=p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+×
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p\left(1-p\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Binomické, 
+\begin_inset Formula $X\sim Bi\left(n,~p\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\binom{n}{k}p^{k}\left(1-p\right)^{n-k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{1-p}\left(n-k,\,1+k\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbb{E}X=n*p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $varX=np\left(1-p\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Geometrické, 
+\begin_inset Formula $X\sim geom\left(p\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(1-p\right)^{k-1}*p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbb{P}\left(T\leq n\right)=1-\left(1-p\right)^{n}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newline
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\mathbb{P}\left(T>n\right)=\left(1-p\right)^{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbb{E}X=\frac{1}{p}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $varX=\frac{1-p}{p^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Poissonovo,
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+
+\backslash
+newline
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $X\sim Pois\left(\lambda\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\lambda^{k}}{k!}e^{-\lambda}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q\left(\left\lfloor k+1\right\rfloor ,\,\lambda\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Funkce přežití
-\begin_inset Formula 
-\[
-\mathbb{P}\left(T>n\right)=\left(1-p\right)^{n}
-\]
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diskrétní rozdělení
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Střední hodnota
-\begin_inset Formula 
-\[
-\mathbb{E}X=\frac{1}{p}
-\]
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Rozptyl
-\begin_inset Formula 
-\[
-varX=\frac{1}{p}\left(\frac{1}{p}-1\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Poissonovo rozdělení
-\end_layout
-
-\begin_layout Standard
-TODO
 \end_layout
 
 \begin_layout Subsection
@@ -1382,59 +1606,6 @@ Spojité rozdělení
 \begin_layout Standard
 Spojité náhodné veličiny nabývají na rozdíl od diskrétních veličin nějakého
  intervalu.
-\end_layout
-
-\begin_layout Subsubsection
-Rovnoměrné rozdělení
-\end_layout
-
-\begin_layout Standard
-TODO
-\end_layout
-
-\begin_layout Subsubsection
-Exponenciální rozdělení
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{eqnarray*}
-X & \sim & exp\left(\lambda\right)\\
-f\left(x\right) & = & \lambda e^{-\lambda x}\text{,}~x\geq0\\
-P\left(X\leq x\right) & = & 1-e^{-\lambda x}\\
-\mathbb{E}X & = & \frac{1}{\lambda}\\
-\text{var}X & = & \frac{1}{\lambda^{2}}
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1460,9 +1631,267 @@ centering
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/Exponential_cdf.svg
-	scale 90
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Rozdělení
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Funkce hustoty
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Distribuční funkce
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $\mathbb{E}X$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $varX$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Rovnoměrné, 
+\begin_inset Formula $X\sim unif\left(a,b\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{b-a};\, x\in\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+×
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{a+b}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\left(b-a\right)^{2}}{12}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Exponenciální, 
+\begin_inset Formula $X\sim Bi\left(n,~p\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda e^{-\lambda x};\, x\in\left[0,+\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1-e^{-\lambda x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\lambda}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\lambda^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Normální (Gaussovo), 
+\begin_inset Formula $X\sim geom\left(p\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\sigma\sqrt{2\pi}}*e^{\frac{-\left(x-\mu\right)^{2}}{2\sigma^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+×
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -1473,14 +1902,7 @@ centering
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Graf distribuční funkce exponenciálního rozdělení
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Wikipedia"
-
-\end_inset
-
-
+Spojité rozdělení
 \end_layout
 
 \end_inset
@@ -1491,14 +1913,6 @@ key "Wikipedia"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsubsection
-Normální (gaussovo) rozdělení
-\end_layout
-
-\begin_layout Standard
-TODO
 \end_layout
 
 \begin_layout Section
