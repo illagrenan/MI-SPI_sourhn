@@ -1091,10 +1091,48 @@ Rozptyl
 \end_layout
 
 \begin_layout Standard
+Pro diskrétní náhodnou veličinu jej můžeme definovat vztahem:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
-\sigma_{x}=varX=\mathbb{E}\left(X-\mathbb{E}X\right)^{2}=\mathbb{E}X^{2}-\left(\mathbb{E}X\right)^{2}
+\sigma^{2}=\sum_{i=1}^{n}\left[x_{i}-E\left(X\right)\right]^{2}p_{i}=\sum_{i=1}^{n}x_{i}^{2}p_{i}-\left[E\left(X\right)\right]^{2}
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pro spojitou náhodnou veličinu definujeme rozptyl vztahem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma^{2}=\intop_{-\infty}^{+\infty}\left[x_{i}-E\left(X\right)\right]^{2}f\left(x\right)\text{d}x=\intop_{-\infty}^{+\infty}x_{i}^{2}f\left(x\right)\text{d}x-\left[E\left(X\right)\right]^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dále platí:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+var\left(X\right) & = & E\left[\left(X-E\left(X\right)\right)^{2}\right]=E\left(X^{2}\right)-\left(E\left(X\right)\right)^{2}\\
+var\left(X\right) & = & cov\left(X,\, X\right)\\
+var\left(aX\right) & = & a^{2}var\left(X\right)\\
+var\left(X+a\right) & = & var\left(X\right)\\
+var\left(X\pm Y\right) & = & var\left(X\right)+var\left(Y\right)\pm2cov\left(X,\, Y\right)
+\end{eqnarray*}
 
 \end_inset
 
@@ -1174,6 +1212,64 @@ f\left(x\right)=F'_{x}(x)
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Subsection
+Kovariance
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+cov\left(X,\, Y\right)=E\left[\left(X-E\left(X\right)\right)*\left(Y-E\left(Y\right)\right)\right]=E\left(XY\right)-E\left(X\right)E\left(Y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Platí, že pokud
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+cov\left(X,\, Y\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pak 
+\begin_inset Formula 
+\[
+E\left(XY\right)=E\left(X\right)*E\left(Y\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a 
+\begin_inset Formula $X$
+\end_inset
+
+ a 
+\begin_inset Formula $Y$
+\end_inset
+
+ jsou nezávislé.
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
@@ -1976,7 +2072,7 @@ H\left(X,Y\right) & = & H\left(X\right)+H\left(Y\right)\text{\,(speciálně jen 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 Sdružená entropie
 \end_layout
 
@@ -2000,7 +2096,7 @@ H\left(X,Y\right)=-\sum_{i,j}p_{i,j}\log p_{i,j}
 )
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 Podmíněná entropie
 \end_layout
 
@@ -2160,7 +2256,7 @@ L\left(C\right)=\mathbb{E}\ell\left(X\right)=\sum_{i}\ell\left(x_{i}\right)*\mat
 \end_layout
 
 \begin_layout Standard
-Kódování je optimální, pokdu je entropie menší než střední délka kódového
+Kódování je optimální, pokud je entropie menší než střední délka kódového
  slova.
 \end_layout
 
