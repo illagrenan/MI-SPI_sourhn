@@ -593,6 +593,17 @@ Pravděpodobnost jevu
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\mathbb{P}\left(A|B\right)=\mathbb{P}\left(B|A\right)*\mathbb{P}\left(A\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
@@ -678,7 +689,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-\mathbb{P}\left(\male|\bullet\right)=\mathbb{P}\left(\bullet|\male\right)*\mathbb{P}\left(\male\right)=\mathbb{P}\left(\male\right)*\mathbb{P}\left(\bullet|\male\right)=0,7*0,2=\uuline{0,14}
+\mathbb{P}\left(\male\cap\bullet\right)=\mathbb{P}\left(\bullet|\male\right)*\mathbb{P}\left(\male\right)=\mathbb{P}\left(\male\right)*\mathbb{P}\left(\bullet|\male\right)=0,7*0,2=\uuline{0,14}
 \]
 
 \end_inset
@@ -1269,12 +1280,152 @@ a
  jsou nezávislé.
 \end_layout
 
+\begin_layout Subsection
+Korelační koeficient
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho\left(X,\, Y\right)=\frac{cov\left(X,\, Y\right)}{\sigma_{x}*\sigma_{y}}=\frac{cov\left(X,\, Y\right)}{\sqrt{var\left(X\right)}*\sqrt{var\left(Y\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 
 \end_layout
 
 \begin_layout Section
 Rozdělení pravděpodobnosti
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Distribuční funkce
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $X\leq k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hustota
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $X=k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Funkce přežití
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $X>k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Funkce
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -2261,26 +2412,6 @@ Kódování je optimální, pokud je entropie menší než střední délka kód
 \end_layout
 
 \begin_layout Subsection
-Suma
-\end_layout
-
-\begin_layout Standard
-Výpočet sumy
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\sum_{n=0}^{\infty}r^{n} & = & \frac{1}{1-r}\\
-\sum_{n=0}^{\infty}n*r^{n} & = & \frac{r}{\left(1-r\right)^{2}}
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
 Logaritmus
 \end_layout
 
@@ -2511,14 +2642,6 @@ Matice přechodů
 \end_layout
 
 \begin_layout Standard
-Markovova podmínka
-\end_layout
-
-\begin_layout Standard
-TODO
-\end_layout
-
-\begin_layout Standard
 Řetězec zapisujeme
 \end_layout
 
@@ -2560,6 +2683,123 @@ Detailní rovnováha
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Systémy hromadné obsluhy
+\end_layout
+
+\begin_layout Standard
+Modely:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M/M/1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M/M/m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M/G/\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Míra vytížení:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho=\frac{\lambda}{\mu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+(musí být 
+\begin_inset Formula $<1$
+\end_inset
+
+, aby systém pracoval)
+\end_layout
+
+\begin_layout Standard
+Little's law (průměrný počet zákazníků ve frontě):
+\begin_inset Formula 
+\[
+N=\lambda*T
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ostatní
+\end_layout
+
+\begin_layout Subsection
+Řady
+\end_layout
+
+\begin_layout Standard
+Výpočet řad
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\sum_{n=0}^{\infty}r^{n} & = & \frac{1}{1-r}\\
+\sum_{n=0}^{\infty}n*r^{n} & = & \frac{r}{\left(1-r\right)^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nekonečná řada:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{a_{1}}{1-q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+(
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ -- počátek, 
+\begin_inset Formula $q$
+\end_inset
+
+ -- kvocient)
 \end_layout
 
 \begin_layout Standard
