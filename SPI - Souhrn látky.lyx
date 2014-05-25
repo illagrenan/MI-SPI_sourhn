@@ -105,7 +105,7 @@
 \quotes_language german
 \papercolumns 1
 \papersides 1
-\paperpagestyle fancy
+\paperpagestyle plain
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -145,16 +145,6 @@ height "1pt"
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset index_print
-LatexCommand printindex
-type "idx"
 
 \end_inset
 
@@ -1752,7 +1742,6 @@ status open
 
 \begin_layout Plain Layout
 
-\series bold
 
 \backslash
 newline
@@ -2800,24 +2789,6 @@ Nekonečná řada:
 \end_inset
 
  -- kvocient)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "spi_ref"
-options "plain"
-
-\end_inset
-
-
 \end_layout
 
 \end_body
