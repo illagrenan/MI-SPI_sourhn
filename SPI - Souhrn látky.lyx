@@ -125,33 +125,22 @@
 Statistika pro informatiku
 \end_layout
 
-\begin_layout Author
+\begin_layout Standard
+\align center
+
+\size largest
 Souhrn látky
-\end_layout
-
-\begin_layout Date
-únor 2014
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
+\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
+\align center
 
-\end_inset
-
-
+\size large
+červen 2014
 \end_layout
 
 \begin_layout Standard
@@ -2901,7 +2890,7 @@ Systémy hromadné obsluhy
 \end_layout
 
 \begin_layout Standard
-Modely:
+Tři modely:
 \end_layout
 
 \begin_layout Itemize
@@ -2931,9 +2920,12 @@ Míra vytížení:
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-\rho=\frac{\lambda}{\mu}
-\]
+\begin{eqnarray*}
+\rho & = & \frac{\lambda}{\mu}\\
+\mu & = & \frac{1}{T}\\
+\lambda & = & \text{intenzita příchodů}\\
+\mu & = & \text{intenzita obsluhy}
+\end{eqnarray*}
 
 \end_inset
 
@@ -2950,15 +2942,68 @@ Míra vytížení:
 \end_layout
 
 \begin_layout Standard
-Little's law (průměrný počet zákazníků ve frontě):
+Little's law (
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+střední počet požadavků v systému
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang czech
+):
 \begin_inset Formula 
-\[
-N=\lambda*T
-\]
+\begin{eqnarray*}
+N & = & \sum_{n=0}^{\infty}n*\pi_{n}\\
+N & = & \underbrace{N_{Q}}_{\text{Fronta}}+\underbrace{N_{S}}_{\text{Obsluha}}\\
+N_{S} & = & \lambda*T_{S}
+\end{eqnarray*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Průměrný čas ve frontě/systému:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+N & = & \lambda*T\\
+T & = & T_{Q}+T_{S}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+(
+\begin_inset Formula $T$
+\end_inset
+
+ -- průměrný čas v systému)
 \end_layout
 
 \begin_layout Section
