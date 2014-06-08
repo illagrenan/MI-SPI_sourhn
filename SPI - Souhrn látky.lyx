@@ -31,6 +31,7 @@
 % Added by lyx2lyx
 \renewcommand{\arraystretch}{1.5}
 %\usepackage{array,booktabs}
+\usepackage{euscript}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -2698,6 +2699,82 @@ R_{x}\left(t_{1},\, t_{2}\right) & = & \mathbb{E}\left[X\left(t_{1}\right)*X\lef
 
 \end_layout
 
+\begin_layout Subsection
+Exponenciální závody
+\end_layout
+
+\begin_layout Standard
+Spojité, bez paměti (memoryless), bez intenzit.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+S\sim Exp\left(\lambda\right),\, T\sim Exp\left(\mu\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+(Náhodné veličiny 
+\begin_inset Formula $S$
+\end_inset
+
+ a 
+\begin_inset Formula $T$
+\end_inset
+
+ jsou náhodně rozdělené.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbb{E}\left(S\right)=\frac{1}{\lambda},\,\mathbb{E}\left(T\right)=\frac{1}{\mu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbb{E}\text{max}\left\{ S,\, T\right\}  & = & \mathbb{E}\left(S\right)+\mathbb{E}\left(T\right)-\mathbb{E}\text{min}\left\{ S,\, T\right\} \\
+\mathbb{E}\text{min}\left\{ S,\, T\right\}  & = & \frac{1}{\lambda+\mu}\\
+\mathbb{P}\left(T<S\right) & = & \frac{\mu}{\lambda+\mu}\\
+\mathbb{P}\left(S<T\right) & = & \frac{\lambda}{\lambda+\mu}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Markovovy řetězce
 \end_layout
@@ -2821,6 +2898,57 @@ N=\lambda*T
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Statistika
+\end_layout
+
+\begin_layout Subsection
+Konfidenční intervaly
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+ známe:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu\in\left(\overline{X}_{n}-\EuScript{Z}_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}};\,\overline{X}_{n}+\EuScript{Z}_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+ neznáme:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu\in\left(\overline{X}_{n}-\EuScript{T}_{\frac{\alpha}{2|n-1}}\frac{\EuScript{S}_{n}}{\sqrt{n}};\,\overline{X}_{n}+\EuScript{T}_{\frac{\alpha}{2|n-1}}\frac{\EuScript{S}_{n}}{\sqrt{n}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|n-1$
+\end_inset
+
+ je stupeň volnosti studentova rozdělení
 \end_layout
 
 \begin_layout Section
