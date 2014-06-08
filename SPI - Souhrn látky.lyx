@@ -2775,6 +2775,67 @@ S\sim Exp\left(\lambda\right),\, T\sim Exp\left(\mu\right)
 
 \end_layout
 
+\begin_layout Subsubsection
+Grafická reprezentace
+\end_layout
+
+\begin_layout Standard
+Často pomocí následujícího diagramu (příklad):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/Exponencialni_zavody.eps
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagram exponenciálních závodů
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Markovovy řetězce
 \end_layout
