@@ -29,6 +29,8 @@
 \makeatother
 % Added by lyx2lyx
 % Added by lyx2lyx
+\renewcommand{\arraystretch}{1.5}
+%\usepackage{array,booktabs}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -474,7 +476,8 @@ Průnik jevů
 \begin{eqnarray*}
 \mathbb{P}\left(A\cap B\right) & = & \mathbb{P}\left(A|B\right)\mathbb{P}\left(B\right)\\
 \mathbb{P}\left(A\cap B\right) & = & \mathbb{P}\left(B|A\right)\mathbb{P}\left(A\right)\\
-\mathbb{P}\left(A\cap B\cap C\ldots\right) & = & \mathbb{P}\left(A\right)\mathbb{P}\left(B|A\right)\mathbb{P}\left(C|A\cap B\right)\ldots
+\mathbb{P}\left(A\cap B\cap C\ldots\right) & = & \mathbb{P}\left(A\right)\mathbb{P}\left(B|A\right)\mathbb{P}\left(C|A\cap B\right)\ldots\\
+\mathbb{P}\left(A\cap B\cap C\ldots\right) & = & \mathbb{P}\left(A|B\cap C\right)\mathbb{P}\left(B|C\right)\mathbb{P}\left(C\right)
 \end{eqnarray*}
 
 \end_inset
@@ -641,6 +644,46 @@ Podmíněná pravděpodobnost
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Pravděpodobnostní míra
+\end_layout
+
+\begin_layout Standard
+Pravděpodobnostní míra 
+\begin_inset Formula $Q$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Q\left(A\right)=P\left(A|C\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Platí
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+0 & \leq & Q\left(A\right)\leq1\\
+Q\left(A\right) & = & 1\\
+Q\left(\bigcup_{i=1}^{\infty}A_{i}\right) & = & \sum_{i=1}^{\infty}Q\left(A_{i}\right)\text{, pokud jsou }A_{i}\text{ disjunktní jevy}
+\end{eqnarray*}
 
 \end_inset
 
@@ -1946,7 +1989,7 @@ Distribuční funkce
 
 \series bold
 Rovnoměrné, 
-\begin_inset Formula $X\sim unif\left(a,b\right)$
+\begin_inset Formula $X\sim Unif\left(a,b\right)$
 \end_inset
 
 
@@ -2008,7 +2051,7 @@ Rovnoměrné,
 
 \series bold
 Exponenciální, 
-\begin_inset Formula $X\sim Bi\left(n,~p\right)$
+\begin_inset Formula $X\sim Exp\left(n,~p\right)$
 \end_inset
 
 
@@ -2073,7 +2116,7 @@ Exponenciální,
 
 \series bold
 Normální (Gaussovo), 
-\begin_inset Formula $X\sim geom\left(p\right)$
+\begin_inset Formula $X\sim Geom\left(p\right)$
 \end_inset
 
 
