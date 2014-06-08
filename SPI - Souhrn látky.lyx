@@ -532,6 +532,76 @@ a proto tedy:
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+Pokud jsou dva jevy 
+\begin_inset Formula $X$
+\end_inset
+
+ a 
+\begin_inset Formula $Y$
+\end_inset
+
+ 
+\series bold
+spojité a nezávislé
+\series default
+, pak
+\begin_inset Formula 
+\[
+\mathbb{P}\left(X=Y\right)=0\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Pokud jsou dva jevy 
+\begin_inset Formula $X$
+\end_inset
+
+ a 
+\begin_inset Formula $Y$
+\end_inset
+
+ 
+\series bold
+stejně rozdělené a nezávislé
+\series default
+, pak
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\mathbb{P}\left(X<Y\right)=\mathbb{P}\left(Y<X\right)\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Podmíněná pravděpodobnost
 \end_layout
@@ -2140,6 +2210,7 @@ Normální (Gaussovo),
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 ×
 \end_layout
 
@@ -2429,46 +2500,9 @@ Střední délka kódového slova
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-L\left(C\right)=\mathbb{E}\ell\left(X\right)=\sum_{i}\ell\left(x_{i}\right)*\mathbb{P}\left(X=x_{i}\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Kódování je optimální, pokud je entropie menší než střední délka kódového
- slova.
-\end_layout
-
-\begin_layout Subsection
-Logaritmus
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula 
 \begin{eqnarray*}
-\log_{a}\left(x_{1}*x_{2}\right) & = & \log_{a}x_{1}+\log_{a}x_{2}\\
-\log_{a}\left(\frac{x_{1}}{x_{2}}\right) & = & \log_{a}x_{1}-\log_{a}x_{2}\\
-\log_{a}x^{r} & = & r*\log_{a}x\\
-\log_{a}a & = & 1\\
-\log_{a}1 & = & 0
+L\left(C\right) & = & \mathbb{E}\ell\left(X\right)=\sum_{i}\ell\left(x_{i}\right)*\mathbb{P}\left(X=x_{i}\right)\\
+L\left(C\right) & \geq & H_{D}\left(X\right)
 \end{eqnarray*}
 
 \end_inset
@@ -2476,9 +2510,16 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+Kódování je optimální
+\series default
+, pokud se střední délka kódového slova a entropie rovnají (
+\begin_inset Formula $L\left(C\right)=H_{D}\left(X\right)$
 \end_inset
 
-
+).
 \end_layout
 
 \begin_layout Section
@@ -2832,6 +2873,44 @@ Nekonečná řada:
 \end_inset
 
  -- kvocient)
+\end_layout
+
+\begin_layout Subsection
+Logaritmus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray*}
+\log_{a}\left(x_{1}*x_{2}\right) & = & \log_{a}x_{1}+\log_{a}x_{2}\\
+\log_{a}\left(\frac{x_{1}}{x_{2}}\right) & = & \log_{a}x_{1}-\log_{a}x_{2}\\
+\log_{a}x^{r} & = & r*\log_{a}x\\
+\log_{a}a & = & 1\\
+\log_{a}1 & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
