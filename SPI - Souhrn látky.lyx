@@ -3029,7 +3029,7 @@ Adjungovaná matice je matice subdeterminantů vynásobená maticí znamének:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $N_{i,j}=\mathbb{E}\left(\text{počet průchodů stavem "j"}|\text{začínáme ve stavu "i"}\right)$
+\begin_inset Formula $N_{i,j}=\mathbb{E}\left(\text{počet průchodů stavem j}|\text{začínáme ve stavu i}\right)$
 \end_inset
 
 , zároveň součet řádku je střední doba absorpce, pokud začínáme v určitém
@@ -3074,6 +3074,58 @@ Matici
 \[
 B=N*R
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/Matrix_multiplication_diagram.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Násobení matic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
