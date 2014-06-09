@@ -133,7 +133,7 @@ Souhrn látky
 \begin_inset Newline newline
 \end_inset
 
-
+0
 \end_layout
 
 \begin_layout Standard
@@ -2854,18 +2854,83 @@ maticí přechodů.
 \end_layout
 
 \begin_layout Subsection
-Stacionární distribuce
+Absorbující Markovův řetězec
 \end_layout
 
-\begin_layout Itemize
-Po čase se některé Markovovy řetězce ustálí v nějakém stavu.
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
 \end_layout
 
-\begin_layout Itemize
-Rovnovážná distribuce
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/absorbing_markov.eps
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Absorbující Markovův řetězec obsahuje rekurentní stavy
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
-\pi:\,\pi=\pi*\mathbb{P}
+P=\left(\begin{array}{c|c}
+Q & R\\
+\hline 0 & 1
+\end{array}\right)
 \]
 
 \end_inset
@@ -2873,7 +2938,195 @@ Rovnovážná distribuce
 
 \end_layout
 
+\begin_layout Plain Layout
+\align center
+(
+\begin_inset Formula $P$
+\end_inset
+
+ je fundamentální matice, 
+\begin_inset Formula $Q$
+\end_inset
+
+ -- tranzientní stavy, 
+\begin_inset Formula $R$
+\end_inset
+
+ -- rekurentní stavy)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Předpokládaný počet průchodů v tranzientním (
+\begin_inset Formula $Q$
+\end_inset
+
+) stavu vypočítáme pomocí matice 
+\begin_inset Formula $N$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N=\left(1-Q\right)^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Počet průchodů po určitém čase spočteme jako
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N=\left(1-Q^{n}\right)^{-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A^{-1}=\frac{1}{\text{det}A}*\text{adj}A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Adjungovaná matice je matice subdeterminantů vynásobená maticí znamének:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}+ & - & + & \cdots\\
+- & + & - & \cdots\\
++ & - & + & \cdots\\
+\vdots & \vdots & \vdots & \cdots
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N_{i,j}=\mathbb{E}\left(\text{počet průchodů stavem "j"}|\text{začínáme ve stavu "i"}\right)$
+\end_inset
+
+, zároveň součet řádku je střední doba absorpce, pokud začínáme v určitém
+ stavu.
+\end_layout
+
+\begin_layout Standard
+Pravděpodobnost, že spadneme do rekurentního stavu stavu 
+\begin_inset Quotes gld
+\end_inset
+
+j
+\begin_inset Quotes grd
+\end_inset
+
+, začínáme-li v 
+\begin_inset Quotes gld
+\end_inset
+
+i
+\begin_inset Quotes grd
+\end_inset
+
+ je
+\begin_inset Formula 
+\[
+B_{i,j}=\mathbb{P}\left(i|j\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Matici 
+\begin_inset Formula $B$
+\end_inset
+
+ vypočítáme jako
+\begin_inset Formula 
+\[
+B=N*R
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Stacionární distribuce
+\end_layout
+
+\begin_layout Standard
+Po čase se některé Markovovy řetězce ustálí v nějakém stavu.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Rovnovážná distribuce
+\end_layout
+
 \begin_layout Itemize
+Diskrétní --
+\begin_inset Formula $\pi:\,\pi*Q=\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Spojité -- 
+\begin_inset Formula $\pi:\,\pi*Q=0$
+\end_inset
+
+ (Zadáno pomocí intenzity 
+\begin_inset Formula $\lambda$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Standard
+U obou platí
+\begin_inset Formula 
+\[
+\pi_{i}+\pi_{2}+\ldots+\pi_{n}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Detailní rovnováha
 \begin_inset Formula 
 \[
