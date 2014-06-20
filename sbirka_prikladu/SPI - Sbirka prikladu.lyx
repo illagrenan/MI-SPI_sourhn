@@ -1889,7 +1889,7 @@ A)
 \align center
 \begin_inset Graphics
 	filename images/priklad_11_system_se_servery.svg
-	scale 55
+	scale 65
 
 \end_inset
 
@@ -1989,13 +1989,16 @@ I.
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray*}
-\lambda\pi_{0} & = & \mu\pi_{1}\\
-\lambda\pi_{1} & = & 2\mu\pi_{2}\\
-\lambda\pi_{2} & = & 3\mu\pi_{3}\\
-\frac{3}{4}\lambda\pi_{3} & = & 3\mu\pi_{4}\\
-\vdots & \vdots & \vdots
-\end{eqnarray*}
+\[
+\begin{array}{cccccccc}
+\lambda\pi_{0} & = & \mu\pi_{1} & \rightarrow & \pi_{1} & = & \frac{\lambda}{\mu}\pi_{0}\\
+\lambda\pi_{1} & = & 2\mu\pi_{2} & \rightarrow & \pi_{2} & = & \frac{\lambda}{2\mu}\pi_{1}\\
+\lambda\pi_{2} & = & 3\mu\pi_{3} & \rightarrow & \pi_{3} & = & \frac{\lambda}{3\mu}\pi_{2}\\
+\frac{3}{4}\lambda\pi_{3} & = & 3\mu\pi_{4} & \rightarrow & \pi_{4} & = & \frac{\lambda}{4\mu}\pi_{3}\\
+\vdots & \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+\vdots & \vdots & \vdots & \rightarrow & \pi_{n+1} & = & \frac{\lambda}{4\mu}\pi_{n} & \text{pro }\forall n\geq3
+\end{array}
+\]
 
 \end_inset
 
@@ -2067,7 +2070,7 @@ III.
 ):
 \begin_inset Formula 
 \[
-\pi_{n}=\pi_{3}*\left(\frac{\frac{3}{4}\lambda}{3\mu}\right)^{n-3}=\left(\frac{\lambda^{3}}{6\mu^{3}}*\pi_{0}\right)*\left(\frac{\frac{3}{4}\lambda}{3\mu}\right)^{n-3}=\boxed{\frac{\lambda^{3}}{6\mu^{3}}*\pi_{0}*\left(\frac{\lambda}{4\mu}\right)^{n-3}}
+\pi_{n}=\pi_{3}*\left(\frac{\frac{3}{4}\lambda}{3\mu}\right)^{n-3}=\left(\frac{\lambda^{3}}{6\mu^{3}}*\pi_{0}\right)*\left(\frac{\frac{3}{4}\lambda}{3\mu}\right)^{n-3}=\boxed{\frac{\lambda^{3}}{6\mu^{3}}*\pi_{0}*\left(\frac{\lambda}{4\mu}\right)^{n-3}}\text{ pro }n\geq3
 \]
 
 \end_inset
@@ -2111,6 +2114,10 @@ Součet nekonečné geometrické řady spočteme jako
 \begin_inset Formula $S_{g}=\frac{a_{0}}{1-q}$
 \end_inset
 
+ pro 
+\begin_inset Formula $\left|q\right|<1$
+\end_inset
+
 , tedy:
 \begin_inset Formula 
 \[
@@ -2125,7 +2132,7 @@ Součet nekonečné geometrické řady spočteme jako
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\pi_{0}*\left(1+1+\frac{1}{2}+\frac{2}{9}\right)=1\Rightarrow\pi_{0}=\uuline{\frac{9}{14}}
+\pi_{0}*\left(1+1+\frac{1}{2}+\frac{2}{9}\right)=1\Rightarrow\pi_{0}=\uuline{\frac{18}{49}}
 \]
 
 \end_inset
@@ -2137,7 +2144,7 @@ Součet nekonečné geometrické řady spočteme jako
 Výsledné stacionární rozdělení je
 \begin_inset Formula 
 \[
-\pi=\left(\pi_{0},\,\pi_{0},\,\frac{1}{2}\pi_{0},\,\frac{1}{6}\pi_{0},\,\frac{1}{24}\pi_{0},\ldots\right)=\boxed{\left(\frac{2}{9},\,\frac{2}{9},\,\frac{1}{9},\,\frac{1}{27},\ldots\right)}
+\pi=\left(\pi_{0},\,\pi_{0},\,\frac{1}{2}\pi_{0},\,\frac{1}{6}\pi_{0},\,\frac{1}{24}\pi_{0},\ldots\right)=\boxed{\left(\frac{18}{49},\,\frac{18}{49},\,\frac{9}{49},\,\frac{3}{49},\,\frac{3}{196},\ldots\right)}
 \]
 
 \end_inset
@@ -2165,7 +2172,7 @@ Fronta je prázdná tehdy, pokud se v systému nachází
 
 \begin_inset Formula 
 \[
-P\left(X\left(t\right)\leq3\right)=\pi_{0}+\pi_{1}+\pi_{2}+\pi_{3}=\frac{2}{9}+\frac{2}{9}+\frac{1}{9}=\uuline{\frac{1}{3}}
+P\left(X\left(t\right)\leq3\right)=\pi_{0}+\pi_{1}+\pi_{2}+\pi_{3}=\frac{18}{49}+\frac{18}{49}+\frac{9}{49}+\frac{3}{49}=\uuline{\frac{48}{49}}
 \]
 
 \end_inset
