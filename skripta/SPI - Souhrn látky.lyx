@@ -133,7 +133,7 @@ Souhrn látky
 \begin_inset Newline newline
 \end_inset
 
-0
+
 \end_layout
 
 \begin_layout Standard
@@ -1429,7 +1429,11 @@ centering
 \begin_inset Text
 
 \begin_layout Plain Layout
-Distribuční funkce
+Distribuční funkce (
+\begin_inset Formula $F$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -1504,7 +1508,7 @@ Funkce přežití
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Funkce
+Funkce a nerovnosti
 \end_layout
 
 \end_inset
@@ -1589,7 +1593,13 @@ Funkce hustoty
 \begin_layout Plain Layout
 
 \series bold
-Distribuční funkce
+Distribuční funkce 
+\series default
+(
+\begin_inset Formula $F$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -2007,7 +2017,13 @@ Funkce hustoty
 \begin_layout Plain Layout
 
 \series bold
-Distribuční funkce
+Distribuční funkce 
+\series default
+(
+\begin_inset Formula $F$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -2073,7 +2089,18 @@ Rovnoměrné,
 \begin_inset Text
 
 \begin_layout Plain Layout
-×
+\begin_inset Formula 
+\[
+F\left(X\right)\begin{cases}
+0 & \text{pro }x\leq a\\
+\frac{x-a}{b-a} & \text{pro }a<x<b\\
+1 & \text{pro }x\geq b
+\end{cases}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2266,7 +2293,7 @@ Entropie diskrétní veličiny
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\boxed{H_{b}\left(X\right)=-\sum p_{i}\log_{b}p_{i}}
+\boxed{H_{b}\left(X\right)=-\sum_{\text{all }i}p_{i}\log_{b}p_{i}}
 \]
 
 \end_inset
@@ -2952,7 +2979,11 @@ Q & R\\
 \begin_inset Formula $R$
 \end_inset
 
- -- rekurentní stavy)
+ -- rekurentní stavy, 
+\begin_inset Formula $1$
+\end_inset
+
+ -- jednotková matice)
 \end_layout
 
 \end_inset
@@ -3138,6 +3169,10 @@ Stacionární distribuce
 
 \begin_layout Standard
 Po čase se některé Markovovy řetězce ustálí v nějakém stavu.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3147,7 +3182,11 @@ Rovnovážná distribuce
 \end_layout
 
 \begin_layout Itemize
-Diskrétní --
+
+\series bold
+Diskrétní
+\series default
+:
 \begin_inset Formula $\pi:\,\pi*Q=\pi$
 \end_inset
 
@@ -3155,15 +3194,23 @@ Diskrétní --
 \end_layout
 
 \begin_layout Itemize
-Spojité -- 
+
+\series bold
+Spojité
+\series default
+: 
 \begin_inset Formula $\pi:\,\pi*Q=0$
 \end_inset
 
- (Zadáno pomocí intenzity 
+ (Zadáno pomocí intenzit 
 \begin_inset Formula $\lambda$
 \end_inset
 
 ) 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3315,6 +3362,17 @@ T & = & T_{Q}+T_{S}
 Statistika
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overline{X}=\frac{\sum}{N}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Konfidenční intervaly
 \end_layout
@@ -3362,6 +3420,56 @@ Konfidenční intervaly
  je stupeň volnosti studentova rozdělení
 \end_layout
 
+\begin_layout Subsection
+Testování hypotéz
+\end_layout
+
+\begin_layout Standard
+Testovací statistika, 
+\series bold
+neznáme
+\series default
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T=\frac{\overline{X}_{n}-\mu_{0}}{\frac{\EuScript{S}}{\sqrt{n}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Testovací statistika, 
+\series bold
+známe
+\series default
+ 
+\begin_inset Formula $\sigma$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z=\frac{\overline{X}_{n}-\mu_{0}}{\frac{\sigma}{\sqrt{n}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Ostatní
 \end_layout
@@ -3371,10 +3479,24 @@ Ostatní
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
 Výpočet řad
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{eqnarray*}
 \sum_{n=0}^{\infty}r^{n} & = & \frac{1}{1-r}\\
@@ -3386,14 +3508,14 @@ Výpočet řad
 
 \end_layout
 
-\begin_layout Standard
-Nekonečná řada:
+\begin_layout Plain Layout
+Součet nekonečné geometrické řady:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
-\frac{a_{1}}{1-q}
+S_{n}=\frac{a_{0}}{1-q}\text{ pro }\left|q\right|<1
 \]
 
 \end_inset
@@ -3401,21 +3523,26 @@ Nekonečná řada:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \align center
 (
-\begin_inset Formula $a_{1}$
+\begin_inset Formula $a_{0}$
 \end_inset
 
- -- počátek, 
+ -- první prvek, 
 \begin_inset Formula $q$
 \end_inset
 
  -- kvocient)
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-Logaritmus
+Logaritmy
 \end_layout
 
 \begin_layout Standard
