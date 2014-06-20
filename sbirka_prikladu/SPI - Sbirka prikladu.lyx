@@ -1517,6 +1517,181 @@ Tři výrobky
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/priklad_9_popularita_nakupu.svg
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sestavme matici přechodů 
+\begin_inset Formula $Q$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}[t]{cc}
+ & \begin{array}{ccc}
+A & B & C\end{array}\\
+Q=\begin{array}{c}
+A\\
+B\\
+C
+\end{array} & \begin{pmatrix}\frac{9}{10} & \frac{1}{20} & \frac{1}{20}\\
+\frac{1}{10} & \frac{8}{10} & \frac{1}{10}\\
+\frac{3}{20} & \frac{3}{20} & \frac{7}{10}
+\end{pmatrix}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pro stacionární rozdělení (
+\shape italic
+tedy oblíbenost z dlouhodobého hlediska
+\shape default
+) platí:
+\begin_inset Formula 
+\begin{eqnarray}
+\pi*Q & = & \pi\\
+\pi_{1}+\pi_{2}+\ldots+\pi_{n} & = & 1
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sestavme rovnice pro výpočet stacionárního rozdělení (po sloupcích):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{9}{10}\pi_{1}+\frac{1}{20}\pi_{2}+\frac{1}{20}\pi_{3} & = & \pi_{1}\\
+\frac{1}{10}\pi_{1}+\frac{8}{10}\pi_{2}+\frac{1}{10}\pi_{3} & = & \pi_{2}\\
+\frac{3}{20}\pi_{1}+\frac{3}{20}\pi_{2}+\frac{7}{10}\pi_{3} & = & \pi_{3}\\
+\pi_{1}+\pi_{2}+\pi_{3} & = & 1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Soustavu upravíme pro použití v GEM:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+-2\pi_{1}+2\pi_{2}+3\pi_{3} & = & 0\\
+\pi_{1}-4\pi_{2}+3\pi_{3} & = & 0\\
+\pi_{1}+2\pi_{2}-6\pi_{3} & = & 0\\
+\pi_{1}+\pi_{2}+\pi_{3} & = & 1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A vyřešíme (
+\color red
+nesmíme zapomenout počítat s pravou stranou matice a s rovnicí 
+\begin_inset Formula $\pi_{1}+\pi_{2}+\pi_{3}=1$
+\end_inset
+
+
+\color inherit
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}1 & 1 & 1 & 1\\
+1 & 2 & -6 & 0\\
+1 & -4 & 3 & 0\\
+-2 & 2 & 3 & 0
+\end{pmatrix}\sim\cdots\sim\begin{pmatrix}1 & 1 & 1 & 1\\
+0 & 1 & -7 & -1\\
+0 & 0 & -33 & -6\\
+0 & 0 & 33 & 6
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{\pi=\left(\frac{6}{11},\,\frac{3}{11},\,\frac{2}{11}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
