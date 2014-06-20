@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.custom.SynchBarHorizontal</type>
+    <coordinates>
+      <x>200</x>
+      <y>280</y>
+      <w>260</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>200</x>
+      <y>190</y>
+      <w>260</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+s</panel_attributes>
+    <additional_attributes>240;50;40;50;40;100</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>210</y>
+      <w>220</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+s+t</panel_attributes>
+    <additional_attributes>200;50;40;50;40;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>280</x>
+      <y>260</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,1795 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{lmodern}
+\exhyphenpenalty=10000\hyphenpenalty=10000
+\usepackage{colortbl}
+\definecolor{lightgray}{gray}{0.8}
+\definecolor{green}{RGB}{0, 180, 0}
+\definecolor{cyan}{RGB}{0, 180, 180}
+\definecolor{yellow}{RGB}{211,211,0}
+\setlength{\parindent}{0pt}
+\date{}
+\usepackage{multicol}
+\usepackage{cancel,soul,ulem}
+\usepackage{pgfplots}
+\usepackage{upgreek}
+\usepackage{enumerate}
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+\makeatletter
+\let\old@start@align\start@align
+\def\start@align{\setcounter{equation}{0}\old@start@align}
+
+% \usepackage[backend=biber]{biblatex}
+% http://wiki.lyx.org/BibTeX/Biblatex.
+
+\makeatother
+% Added by lyx2lyx
+% Added by lyx2lyx
+\renewcommand{\arraystretch}{1.5}
+%\usepackage{array,booktabs}
+\usepackage{euscript}
+\usepackage{slashbox}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language czech
+\language_package babel
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command bibtex8
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 7
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\branch 5
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\series bold
+Příklad 1
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Uvažujme dvě absolutně spojité nezávislé náhodné veličiny 
+\begin_inset Formula $X$
+\end_inset
+
+ a 
+\begin_inset Formula $Y$
+\end_inset
+
+ se stejným rozdělením.
+ Spočtěte a dokažte 
+\begin_inset Formula $P\left(X>Y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Klíčovou informací je, že veličiny 
+\begin_inset Formula $X$
+\end_inset
+
+ a 
+\begin_inset Formula $Y$
+\end_inset
+
+ jsou spojité, nezávislé a stejně rozdělené.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(X>Y\right)=P\left(Y<X\right)=a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+(Toto víme, protože jsou veličiny 
+\series bold
+stejně rozdělené a nezávislé.
+\series default
+)
+\end_layout
+
+\begin_layout Standard
+Dále víme
+\begin_inset Formula 
+\[
+P\left(X=Y\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+(Toto víme, protože jsou veličiny 
+\series bold
+spojité a nezávislé.
+\series default
+)
+\end_layout
+
+\begin_layout Standard
+Platí tedy, že
+\begin_inset Formula 
+\begin{eqnarray*}
+P\left(X=Y\right)+P\left(X>Y\right)+P\left(Y<X\right) & = & 1\\
+0+a+a & = & 1\\
+2a & = & 1\\
+a & = & \uuline{\frac{1}{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 2
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Vyjádřete výraz 
+\begin_inset Formula $P\left(X_{n+2}=j,\, X_{n+1}=k,\, X_{n}=i\right)|P\left(X_{n}=i\right)$
+\end_inset
+
+ pomocí přechodových pravděpodobností 
+\begin_inset Formula $P_{i,j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 3
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Dokažte, že geometrické rozdělení nemá paměť.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Nemá paměť = nezáleží na historii nějakého jevu.
+\end_layout
+
+\begin_layout Standard
+Předpokládejme dobu čekání 
+\begin_inset Formula $T\sim\text{Geom}\left(p\right)$
+\end_inset
+
+.
+ Pokud jsme již čekali 
+\begin_inset Formula $s$
+\end_inset
+
+ jednotek času, zbývající čas čekání 
+\begin_inset Formula $T-s$
+\end_inset
+
+ má opět 
+\begin_inset Formula $\text{Geom}\left(p\right)$
+\end_inset
+
+, tedy stejný, jako kdybychom zatím vůbec nečekali.
+ Snažíme se tedy dokázat
+\begin_inset Formula 
+\[
+P\left(T-s>k|T>s\right)\overset{?}{=}P\left(T>k\right)\,\text{pro}\, k,\, s>0\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Upravme nerovnici a použijme vzorec pro podmíněnou pravděpodobnost a vzorec
+ funkce přežití geometrického rozdělení
+\begin_inset Formula 
+\begin{eqnarray*}
+P\left(A|B\right) & = & \frac{P\left(A\cap B\right)}{P\left(B\right)}\text{, }P\left(B\right)\neq0\\
+P\left(T>n\right) & = & \left(1-p\right)^{n}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(T-s>k|T>s\right)=P\left(T>k+s|T>S\right)=\frac{P\left(T>k+s\cap T>s\right)}{P\left(T>s\right)}=\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Průnik jevu v čitateli je následující:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/prunik_jevu.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+celý výraz pokračuje vyjádřením pomocí funkce přežití:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cdots=\frac{P\left(T>k+s\right)}{P\left(T>s\right)}=\frac{\left(1-p\right)^{k+s}}{\left(1-p\right)^{s}}=\frac{\cancel{\left(1-p\right)^{s}}\left(1-p\right)^{k}}{\cancel{\left(1-p\right)^{s}}}=\boxed{\left(1-p\right)^{k}=P\left(T>k\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Geometrické rozdělení tedy skutečně 
+\series bold
+nemá paměť
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 4
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Dokažte, že exponenciální rozdělení nemá paměť.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Struktura tohoto příkladu je stejná jako u důkazu, že geometrické rozdělení
+ nemá paměť.
+\begin_inset Formula 
+\[
+X\sim\text{Exp}\left(\lambda\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(X>u+t|X>u\right)=\frac{P\left(X>u+t\cap X>u\right)}{P\left(X>u\right)}=\frac{P\left(X>u+t\right)}{P\left(X>u\right)}=\cdots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Funkce přežití exponenciálního rozdělení je
+\begin_inset Formula 
+\[
+P\left(X>k\right)=e^{-\lambda x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cdots=\frac{e^{-\lambda\left(u+t\right)}}{e^{-\lambda u}}=\frac{\cancel{e^{-\lambda u}}e^{-\lambda t}}{\cancel{e^{-\lambda u}}}=\boxed{e^{-\lambda t}=P\left(X>t\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Exponenciální rozdělení tedy skutečně nemá paměť.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 5
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Mějme server, který dokáže zpracovat paralelně až dva požadavky.
+ Pokud je server zahlcen, ukládají se příchozí požadavky do fronty o kapacitě
+ 
+\begin_inset Formula $5$
+\end_inset
+
+.
+ Zpracování požadavků probíhá náhodně a nezávisle.
+ Střední doba zpracování požadavku na serveru je 
+\begin_inset Formula $25ms$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(A)]
+\end_layout
+
+\end_inset
+
+Server zpracovává dva požadavky.
+ Jaká je průměrná doba odbavení třetího požadavku.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(B)]
+\end_layout
+
+\end_inset
+
+Jaká je průměrná doba zpracování všech tří požadavků.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(C)]
+\end_layout
+
+\end_inset
+
+Jaká je pravděpodobnost, že třetí požadavek bude zpracován jako poslední?
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Graf exponenciálních závodů:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/Exponencialni_zavody.svg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Důležité vzorce
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray*}
+Emin\left\{ S,T\right\}  & = & \frac{1}{\lambda+\mu}\\
+Emax\left\{ S,T\right\}  & = & E\left(S\right)+E\left(T\right)-Emin\left\{ S,T\right\} 
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Za předpokladu
+\begin_inset Formula 
+\[
+S\sim\text{Exp}\left(\lambda\right),\, T\sim\text{Exp}\left(\mu\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{1}\sim\text{Exp}\left(\lambda\right),\, E\left(S_{1}\right)=25ms,\,\lambda=\frac{1}{E\left(S_{1}\right)}\rightarrow\lambda=\frac{1}{25}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{2}\sim\text{Exp}\left(\mu\right),\, E\left(S_{2}\right)=25ms,\,\mu=\frac{1}{E\left(S_{2}\right)}\rightarrow\mu=\frac{1}{25}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+A)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{1}$
+\end_inset
+
+a 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ jsou obsazené, čekáme tedy, až se jeden z nich uvolní (ten nejrychlejší).
+\begin_inset Formula 
+\[
+E(C_{A})=Emin\left\{ S_{1},S_{2}\right\} +E\left(C\right)=\frac{1}{\mu+\lambda}+E\left(C\right)=\frac{1}{\frac{1}{25}+\frac{1}{25}}+25=\ldots=\uuline{37,5ms}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+B)
+\end_layout
+
+\begin_layout Standard
+Všechny tři požadavky budou zpracovány, když bude zpracován nejpomalejší
+ z nich.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+E\left(C_{B}\right) & = & Emin\left\{ S_{1},S_{2}\right\} +Emax\left\{ S_{1},S_{2}\right\} =Emin\left\{ S_{1},S_{2}\right\} +E\left(S_{1}\right)+E\left(S_{2}\right)-Emin\left\{ S_{1},S_{2}\right\} =\\
+ &  & =E\left(S_{1}\right)+E\left(S_{2}\right)=25+25=\uuline{50ms}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+C)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+P\left(C_{L}\right) & = & P\left(C_{L}\cap A_{F}\right)+P\left(C_{L}\cap B_{F}\right)=\frac{\mu}{\mu+\lambda}*\frac{\lambda}{\mu+\lambda}+\frac{\mu}{\mu+\lambda}*\frac{\lambda}{\mu+\lambda}=\\
+ &  & =\frac{\frac{1}{25}}{\frac{1}{25}+\frac{1}{25}}*\frac{\frac{1}{25}}{\frac{1}{25}+\frac{1}{25}}+\frac{\frac{1}{25}}{\frac{1}{25}+\frac{1}{25}}*\frac{\frac{1}{25}}{\frac{1}{25}+\frac{1}{25}}=\cdots=\uuline{\frac{1}{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vzorec vychází z 
+\begin_inset Formula 
+\[
+P\left(S<T\right)*P\left(S>T\right)+\ldots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 6
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Spočtěte entropii geometrického rozdělení, 
+\begin_inset Formula $p=\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 7
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Náhodný proces 
+\begin_inset Formula $X\left(t\right)$
+\end_inset
+
+ je definován jako: 
+\begin_inset Formula $X\left(t\right)=1$
+\end_inset
+
+ pro 
+\begin_inset Formula $0\leq t<A$
+\end_inset
+
+ a 
+\begin_inset Formula $X\left(t\right)=-1$
+\end_inset
+
+ pro 
+\begin_inset Formula $2\leq t\leq B$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ je rovnoměrně rozdělená veličina na intervalu 
+\begin_inset Formula $\left(0,2\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ je náhodná veličiny s exponenciálním rozdělením s intenzitou 
+\begin_inset Formula $\lambda=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(A)]
+\end_layout
+
+\end_inset
+
+Nakreslete graf náhodného procesu.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(B)]
+\end_layout
+
+\end_inset
+
+Spočtěte 
+\begin_inset Formula $E\left(X\left(t\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(C)]
+\end_layout
+
+\end_inset
+
+Určete, zda je proces 
+\begin_inset Formula $X\left(t\right)$
+\end_inset
+
+ stacionární ve střední hodnotě.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+A)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/graf_prubehu.svg
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+B)
+\end_layout
+
+\begin_layout Standard
+Veličiny 
+\begin_inset Formula $A$
+\end_inset
+
+ a 
+\begin_inset Formula $B$
+\end_inset
+
+ jsou jinak rozdělené.
+ Výpočet 
+\begin_inset Formula $E\left(X\right)$
+\end_inset
+
+ tedy rozdělíme na tři části (první interval je jen pro formálnost).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{I.} & t\leq0 & E\left(X\left(t\right)\right)=0\\
+\text{II.} & t\in\left(0,2\right) & E\left(X\left(t\right)\right)=1*P\left(0\leq t\leq A\right)+\cancel{0*P\left(A\leq t\leq2\right)}=P\left(0\leq t\leq A\right)=P\left(A\geq t\right)\\
+\text{III.} & t\geq2 & E\left(X\left(t\right)\right)=\left(-1\right)*P\left(t\leq B\right)+\cancel{0*P\left(t\geq B\right)}=-P\left(B\geq t\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Interval II.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/ex_A.svg
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Chceme spočítat pravděpodobnost (plocha pod křivkou), že 
+\begin_inset Formula $P\left(A\geq t\right)$
+\end_inset
+
+.
+ Jedná se o jednoduchý výpočet obsahu:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(A\geq t\right)=\left(2-t\right)*\frac{1}{2}=\boxed{\frac{2-t}{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Interval III.
+\end_layout
+
+\begin_layout Standard
+Funkce přežití exponenciálního rozdělení je
+\begin_inset Formula 
+\[
+P\left(X>k\right)=e^{-\lambda k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-P\left(B\geq t\right)=-\left(e^{-\lambda t}\right)\left[\lambda=2\right]=\boxed{-e^{-2t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Celkový výsledek je tedy:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E\left(X\left(t\right)\right)=\uuline{\frac{2-t}{2}-e^{-2t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+C)
+\end_layout
+
+\begin_layout Standard
+Střední hodnota není ustálená, závisí na čase 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Proces tedy 
+\series bold
+není stacionární ve střední hodnotě.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 8
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+U markovského řetězce
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/markov.eps
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(A)]
+\end_layout
+
+\end_inset
+
+Definujte rekurentní stav.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(B)]
+\end_layout
+
+\end_inset
+
+Najděte stacionární rozdělení.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(C)]
+\end_layout
+
+\end_inset
+
+Vypište rekurentní stavy.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+A)
+\end_layout
+
+\begin_layout Standard
+Stav 
+\begin_inset Formula $j$
+\end_inset
+
+ se nazývá rekurentní, jestliže řetězec, který z něj vychází.
+ se do 
+\begin_inset Formula $j$
+\end_inset
+
+ vrátí s pravděpodobností 
+\begin_inset Formula $1$
+\end_inset
+
+ po konečně mnoha krocích.
+ Tj.
+ 
+\begin_inset Formula $P\left(T_{j}<\infty\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+B)
+\end_layout
+
+\begin_layout Standard
+Sestrojme matici přechodů 
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Q=\begin{array}{cc}
+ & \begin{array}{cccc}
+s_{1} & s_{2} & s_{3} & s_{4}\end{array}\\
+\begin{array}{c}
+s_{1}\\
+s_{2}\\
+s_{3}\\
+s_{4}
+\end{array} & \begin{pmatrix}0 & 0 & 0 & 1\\
+\frac{1}{2} & 0 & \frac{1}{2} & 0\\
+0 & \frac{1}{4} & 0 & \frac{3}{4}\\
+1 & 0 & 0 & 0
+\end{pmatrix}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Protože je markovským řetězcem popsán jev diskrétní, platí pro stacionární
+ rozdělení:
+\begin_inset Formula 
+\[
+\pi:\,\pi*Q=\pi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sestavme soustavu rovnic
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{2}\pi_{2}+\pi_{4} & = & \pi_{1}\\
+\frac{1}{4}\pi_{3} & = & \pi_{2}\\
+\frac{1}{2}\pi_{2} & = & \pi_{3}\\
+\pi_{1}+\frac{3}{4}\pi_{3} & = & \pi_{4}\\
+\pi_{1}+\pi_{2}+\pi_{3}+\pi_{4} & = & 1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nyní vyřešme soustavu rovnic, pro tento případ použijme GEM.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{pmatrix}1 & 1 & 1 & 1 & 1\\
+-1 & \frac{1}{2} & 0 & 1 & 0\\
+0 & -1 & \frac{1}{4} & 0 & 0\\
+0 & \frac{1}{2} & -1 & 0 & 0\\
+1 & 0 & \frac{3}{4} & -1 & 0
+\end{pmatrix}\sim\cdots\sim\cdots\Rightarrow\pi=\left(\frac{1}{2},\,0,\,0,\,\frac{1}{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+C)
+\end_layout
+
+\begin_layout Standard
+Rekurentní stavy jsou 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+a 
+\begin_inset Formula $s_{2}$
+\end_inset
+
+.
+ Přijít na to můžeme pomocí 
+\shape italic
+silně souvislých komponent 
+\shape default
+z teorie grafů.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Def.: 
+\series default
+Pro všechny dvojice vrcholů 
+\begin_inset Formula $u$
+\end_inset
+
+ a 
+\begin_inset Formula $v$
+\end_inset
+
+ existuje cesta z 
+\begin_inset Formula $u$
+\end_inset
+
+ do 
+\begin_inset Formula $v$
+\end_inset
+
+ a zároveň z 
+\begin_inset Formula $v$
+\end_inset
+
+ do 
+\begin_inset Formula $u$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 9
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Tři výrobky 
+\begin_inset Formula $A,\, B,\, C$
+\end_inset
+
+ mají následující pravděpodobnosti nákupu: 
+\begin_inset Formula $A=0,9,\, B=0,8$
+\end_inset
+
+ a 
+\begin_inset Formula $C=0,7$
+\end_inset
+
+.
+ Pro jiný než oblíbený výrobek se zákazníci rozhodnou ve zbytku procent
+ rovnoměrně mezi zbylýma dvěma.
+ Spočtěte oblíbenost jednotlivých výrobků z dlouhodobého hlediska.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 10
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Mějme zadány tabulky rozdělení 
+\begin_inset Formula $X$
+\end_inset
+
+ a 
+\begin_inset Formula $Y$
+\end_inset
+
+ a 
+\shape italic
+codeword.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}[t]{ccc}
+X,Y & -12 & 5\\
+-12 & \frac{1}{8} & \frac{1}{8}\\
+4 & \frac{1}{2} & \frac{1}{2}
+\end{array}\;\;\;\begin{array}[t]{ccc}
+X,Y & -12 & 5\\
+-12 & 110 & 110\\
+5 & 10 & 0
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(A)]
+\end_layout
+
+\end_inset
+
+Najděte nejmenší možnou očekávanou délku kódového slova jakéhokoliv binárního
+ kódu pro náhodný vektor 
+\begin_inset Formula $X,\, Y$
+\end_inset
+
+ s výše uvedeným rozdělením.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(B)]
+\end_layout
+
+\end_inset
+
+Dosahuje výše uvedené kódování tohoto minima? Proč?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(C)]
+\end_layout
+
+\end_inset
+
+Jsou náhodné veličiny 
+\begin_inset Formula $X$
+\end_inset
+
+ a 
+\begin_inset Formula $Y$
+\end_inset
+
+ nezávislé? Proč?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+A)
+\end_layout
+
+\begin_layout Standard
+Délku kódového slova spočteme jako
+\begin_inset Formula 
+\begin{eqnarray*}
+L\left(C\right) & = & \mathbb{E}\ell\left(X\right)=\sum_{i}\ell\left(x_{i}\right)*\mathbb{P}\left(X=x_{i}\right)\\
+L\left(C\right) & \geq & H_{D}\left(X\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tedy:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L\left(C\right)=\frac{1}{8}*3+\frac{1}{8}*3+\frac{1}{2}*2+\frac{1}{2}*1=\uuline{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+B)
+\end_layout
+
+\begin_layout Standard
+Kódování je optimální tehdy, když platí 
+\begin_inset Formula $L\left(C\right)=H\left(X\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H\left(X,Y\right)=-\sum p_{i}\text{log}_{b}p_{i}=-\left(\frac{1}{8}\text{log}_{2}\frac{1}{8}+\frac{1}{8}\text{log}_{2}\frac{1}{8}+\frac{1}{2}\text{log}_{2}\frac{1}{2}+\frac{1}{4}\text{log}_{2}\frac{1}{4}\right)=-\frac{7}{4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\left(C\right)\geq H\left(X\right)$
+\end_inset
+
+ kódování tedy 
+\series bold
+není optimální
+\series default
+ (délka slova není optimální)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+C)
+\end_layout
+
+\begin_layout Standard
+Pro nezávislost jevů obecně platí
+\begin_inset Formula 
+\[
+P\left(A\cap B\right)=P\left(A\right)*P\left(B\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V tabulce jsou uvedené sdružené pravděpodobnosti (
+\begin_inset Formula $P\left(A\cap B\right)$
+\end_inset
+
+), spočteme tedy samostatné pravděpodobnosti a ty porovnáme s tabulkou.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+P\left(X=-12\right) & = & \frac{1}{8}+\frac{1}{8}=\frac{1}{4}\text{ (součet řádku)}\\
+P\left(Y=-12\right) & = & \frac{1}{8}+\frac{1}{2}=\frac{5}{8}\text{ (součet sloupce)}\\
+P\left(X=-12\wedge Y=-12\right) & = & \frac{1}{4}*\frac{5}{8}=\frac{5}{32}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{5}{32}\neq\underbrace{\frac{1}{8}}_{\text{z tabulky}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Veličiny jsou tedy závislé, tedy nejsou nezávislé.
+\end_layout
+
+\end_body
+\end_document
