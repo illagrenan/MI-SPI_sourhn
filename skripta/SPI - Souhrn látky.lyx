@@ -2389,6 +2389,7 @@ status open
 \begin_inset Formula 
 \begin{eqnarray*}
 H\left(X|Y\right) & = & -\sum_{i,j}p\left(x_{i},y_{i}\right)\log p\left(y_{j}|x_{i}\right)\\
+H\left(X|Y\right) & = & H\left(X,\, Y\right)-H\left(X\right)\\
 \mathbb{P}\left(x_{i}|y_{j}\right) & = & \frac{\mathbb{P}\left(x_{i},\, y_{j}\right)}{\mathbb{P}\left(y_{i}\right)}\,\begin{array}{c}
 \text{sdružená hustota}\\
 \text{marginální hustota}
