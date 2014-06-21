@@ -2858,7 +2858,28 @@ Markovovy řetězce
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+Markovova podmínka
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(X_{n}=s_{j}|X_{0}=s_{0},\, X_{1}=s_{1},\,\ldots,\, X_{n-1}=s_{i}\right)=P\left(X_{n}=s_{j}|X_{n-1}=s_{i}\right)=P_{ij}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
 Matice přechodů
+\series default
+
 \begin_inset Formula 
 \[
 \mathbb{P}_{i,j}=p\left(i,\, j\right)=P\left(X_{n+1}=s_{j}|X_{n}=s_{i}\right)=p_{i,j}
@@ -2883,6 +2904,23 @@ maticí přechodů.
 
 \begin_layout Subsection
 Absorbující Markovův řetězec
+\end_layout
+
+\begin_layout Standard
+V absorbujícím řetězci je pravděpodobnost, že bude proces absorbován 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Tedy:
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}=Q^{n}=0
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3287,7 +3325,11 @@ Míra vytížení:
 
 \begin_layout Standard
 \align center
-(musí být 
+(míra vytížení 
+\begin_inset Formula $\rho$
+\end_inset
+
+ musí být 
 \begin_inset Formula $<1$
 \end_inset
 
@@ -3397,6 +3439,22 @@ Konfidenční intervaly
 \end_layout
 
 \begin_layout Standard
+\align center
+(
+\begin_inset Formula $\EuScript{Z}$
+\end_inset
+
+ -- tabulky normálního rozdělení)
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\sigma^{2}$
 \end_inset
 
@@ -3406,7 +3464,7 @@ Konfidenční intervaly
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mu\in\left(\overline{X}_{n}-\EuScript{T}_{\frac{\alpha}{2|n-1}}\frac{\EuScript{S}_{n}}{\sqrt{n}};\,\overline{X}_{n}+\EuScript{T}_{\frac{\alpha}{2|n-1}}\frac{\EuScript{S}_{n}}{\sqrt{n}}\right)
+\mu\in\left(\overline{X}_{n}-\EuScript{T}_{\frac{\alpha}{2};\, n-1}\frac{\EuScript{S}_{n}}{\sqrt{n}};\,\overline{X}_{n}+\EuScript{T}_{\frac{\alpha}{2};\, n-1}\frac{\EuScript{S}_{n}}{\sqrt{n}}\right)
 \]
 
 \end_inset
@@ -3415,10 +3473,24 @@ Konfidenční intervaly
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $|n-1$
+\align center
+(
+\begin_inset Formula $\EuScript{T}$
 \end_inset
 
- je stupeň volnosti studentova rozdělení
+ -- tabulky Studentova 
+\begin_inset Formula $\EuScript{T}$
+\end_inset
+
+ rozdělení)
+\begin_inset Newline newline
+\end_inset
+
+(
+\begin_inset Formula $;n-1$
+\end_inset
+
+ je stupeň volnosti studentova rozdělení)
 \end_layout
 
 \begin_layout Subsection

@@ -2355,5 +2355,1165 @@ P\left(X\left(t\right)\leq3\right)=\pi_{0}+\pi_{1}+\pi_{2}+\pi_{3}=\frac{18}{49}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 12
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Uvažujte markovský řetězec s konečnou množinou stavů 
+\begin_inset Formula $S=\left\{ s_{1},s_{2},\ldots,s_{n}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(A)]
+\end_layout
+
+\end_inset
+
+Definujte Markovsou podmínku.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(B)]
+\end_layout
+
+\end_inset
+
+Definujte stacionární rozdělení pro tento markovský řetězec.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(C)]
+\end_layout
+
+\end_inset
+
+Pro stav 
+\begin_inset Formula $s_{i}\in S$
+\end_inset
+
+ definujte čas návratu 
+\begin_inset Formula $\tau_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(D)]
+\end_layout
+
+\end_inset
+
+Jak souvisí střední hodnota času návratu se stacionárním rozložením?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+A) Markovova podmínka
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(X_{n}=s_{j}|X_{0}=s_{0},\, X_{1}=s_{1},\,\ldots,\, X_{n-1}=s_{i}\right)=P\left(X_{n}=s_{j}|X_{n-1}=s_{i}\right)=P_{ij}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+B) Stacionární rozdělení
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\pi$
+\end_inset
+
+ je stacionární rozdělení, jestliže platí
+\begin_inset Formula 
+\[
+\pi*P=\pi\text{ (přesněji zapsáno: }\sum_{\text{all}\, i}\pi_{i}P_{ij}=\pi_{j}\text{)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+(
+\begin_inset Formula $P$
+\end_inset
+
+ je přechodová matice)
+\end_layout
+
+\begin_layout Standard
+Pro stacionární rozdělení platí
+\begin_inset Formula 
+\[
+\pi_{i}\geq0\text{ a }\sum_{i=1}^{n}\pi_{i}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+C) Čas návratu
+\end_layout
+
+\begin_layout Standard
+Pro Markovův řetězec 
+\begin_inset Formula 
+\[
+\left(X_{n}\right)_{n\geq0}
+\]
+
+\end_inset
+
+začínající ve stavu 
+\begin_inset Formula $s_{i}\in S$
+\end_inset
+
+, definujme 
+\series bold
+náhodný čas návratu
+\series default
+
+\begin_inset Formula 
+\[
+\tau_{i}=\text{inf}\left\{ n\geq1:\, X_{n}=s_{i}\right\} \text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Náhodný čas návratu je nejmenší čas 
+\begin_inset Formula $n$
+\end_inset
+
+, ve kterém se vrátíme do stavu 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+, přičemž počáteční stav se jako návrat nepočítá (proto 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 13
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Náhodný výběr 
+\begin_inset Formula $16$
+\end_inset
+
+ hodnot z normálního rozdělení.
+ Je zadán 
+\begin_inset Formula $98\%$
+\end_inset
+
+ konfidenční interval 
+\begin_inset Formula $\left(7,398;\,12,602\right)$
+\end_inset
+
+.
+ Otestujte hypotézu 
+\begin_inset Formula $H_{0}:\,\mu=7,5$
+\end_inset
+
+ vs.
+ 
+\begin_inset Formula $H_{A}:\,\mu\neq7,5$
+\end_inset
+
+ s chybou 1.
+ stupně 
+\begin_inset Formula $\alpha=5\%$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\size footnotesize
+(Pozn.
+ jsou dostupné tabulky studentova a chi-kvadrát rozdělení.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Máme zadaný 
+\begin_inset Formula $98\%$
+\end_inset
+
+ CI, my však potřebujeme 
+\begin_inset Formula $95\%$
+\end_inset
+
+ interval.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+ neznáme, použijeme tedy 
+\begin_inset Formula $\EuScript{T}$
+\end_inset
+
+-rozdělení:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu\in\left(\overline{X}_{n}-\EuScript{T}_{\frac{\alpha}{2},n-1}\frac{\EuScript{S}_{n}}{\sqrt{n}};\,\overline{X}_{n}+\EuScript{T}_{\frac{\alpha}{2},n-1}\frac{\EuScript{S}_{n}}{\sqrt{n}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overline{X}_{n}=\frac{7,398+12,602}{2}=\frac{20}{2}=10
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\EuScript{T}_{\frac{\alpha}{2},n-1}=\EuScript{T}_{0,01;,16-1}=\boxed{2,602}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+(Máme 
+\begin_inset Formula $98\%$
+\end_inset
+
+ interval /jen na jedné straně/ 
+\begin_inset Formula $\Rightarrow\alpha=2\%=\frac{0,02}{2}=0,01$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+(Hodnotu 
+\begin_inset Formula $2,602$
+\end_inset
+
+ jsme získali z tabulky Studentova rozdělení /
+\begin_inset Formula $\EuScript{T}$
+\end_inset
+
+-rozdělení/: řádek 
+\begin_inset Formula $15$
+\end_inset
+
+ a sloupec 
+\begin_inset Formula $0,99$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nyní nám chybí směrodatná odchylka 
+\begin_inset Formula $\EuScript{S}$
+\end_inset
+
+, tu získáme ze zadaného 
+\begin_inset Formula $98\%$
+\end_inset
+
+ intervalu:
+\begin_inset Formula 
+\begin{eqnarray*}
+CI_{L} & = & \overline{X}_{n}-\EuScript{T}_{\frac{\alpha}{2},n-1}*\frac{\EuScript{S}_{n}}{\sqrt{n}}\\
+7,398 & = & 10-2,602*\frac{\EuScript{S}_{n}}{4}\\
+\EuScript{S}_{n} & = & \boxed{4}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V tuto chvíli máme všechny potřebné údaje na sestavení 
+\begin_inset Formula $95\%$
+\end_inset
+
+ CI.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+CI_{95}=\left(10-\EuScript{T}_{\frac{0,05}{2},15};\,10+\EuScript{T}_{\frac{0,05}{2},15}\right)=\left(10-2,131;\,10+2,131\right)=\boxed{\left(7,869;\,12,131\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+(Opět hledáme v tabulce Studentova rozdělení, tentokrát na řádku 
+\begin_inset Formula $15$
+\end_inset
+
+ a sloupci 
+\begin_inset Formula $0,975$
+\end_inset
+
+ -- chceme 
+\begin_inset Formula $95\%$
+\end_inset
+
+, na každé straně 
+\begin_inset Formula $2,5\%$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Ptáme se
+\begin_inset Formula 
+\begin{eqnarray*}
+H_{0}\overset{?}{\in}CI_{95}\\
+7,5\notin CI_{95} & \Rightarrow & \text{Hypotézu }H_{0}\text{ \textbf{zamítáme}.}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 14
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Mějme Markovův řetězec
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/priklad14_absorbujici_markov.svg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+se dvěma absorbujícími stavy 
+\begin_inset Formula $\left(s_{1},\, s_{2}\right)$
+\end_inset
+
+ a dvěma neabsorbujícími stavy 
+\begin_inset Formula $\left(s_{2},\, s_{3}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(A)]
+\end_layout
+
+\end_inset
+
+Definujte fundamentální matici.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(B)]
+\end_layout
+
+\end_inset
+
+Jaký bude střední počet kroků do pohlcení, pokud budeme začínat ve stavu
+ 
+\begin_inset Formula $s_{3}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(C)]
+\end_layout
+
+\end_inset
+
+Jaká je pravděpodobnost, že budeme pohlceni stavem 
+\begin_inset Formula $s_{4}$
+\end_inset
+
+, pokud začínáme ve stavu 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 15
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Mějme 
+\begin_inset Formula $N$
+\end_inset
+
+ nezávislých jevů 
+\begin_inset Formula $X_{1}=\text{Exp}\left(\lambda_{1}\right),\,\cdots,\, X_{n}=\text{Exp}\left(\lambda_{n}\right)$
+\end_inset
+
+ a jev 
+\begin_inset Formula $Y=\text{min}\left(X_{1},\,\ldots,\, X_{n}\right)$
+\end_inset
+
+.
+ Najděte hustotu a distribuční funkci 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 16
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Mějme 
+\begin_inset Formula $25$
+\end_inset
+
+ naměřených hodnot.
+ Jejich součet je 
+\begin_inset Formula $250$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma^{2}=16$
+\end_inset
+
+.
+ Otestujte hypotézu 
+\begin_inset Formula $H_{0}:\,\mu=12$
+\end_inset
+
+ oproti 
+\begin_inset Formula $H_{A}:\,\mu\neq12$
+\end_inset
+
+.
+ Při jaké nejmenší chybě můžeme 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ ještě zamítnout?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/priklad_16_situace.JPG
+	lyxscale 20
+	scale 12
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hledáme 
+\begin_inset Formula $p$
+\end_inset
+
+-value
+\begin_inset Formula $,$
+\end_inset
+
+tedy pravděpodobnost, že 
+\begin_inset Formula $H_{A}$
+\end_inset
+
+ nastane.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overline{X}_{n}=\frac{\sum}{N}=\frac{250}{25}=10
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pracujeme jen s jednou stranou intervalu, tedy
+\begin_inset Formula 
+\begin{eqnarray*}
+\mu_{0} & = & \overline{X}_{n}+\EuScript{Z}_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{N}}\\
+\EuScript{Z}_{\frac{\alpha}{2}} & = & \frac{\overline{X}_{n}-\mu_{0}}{\frac{\sigma}{\sqrt{N}}}\\
+\EuScript{Z}_{\frac{\alpha}{2}} & = & \frac{10-12}{\frac{\sqrt{16}}{\sqrt{25}}}\\
+\EuScript{Z}_{\frac{\alpha}{2}} & = & -\frac{5}{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V tabulce normálního rozdělení nalezneme příslušnou hodnotu
+\begin_inset Formula 
+\[
+N\left(0,\,\EuScript{Z}_{\frac{\alpha}{2}}\right)=N\left(0,\,\frac{5}{2}\right)=0,4938
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\alpha}{2}=\frac{1}{2}-0,4938=0,0062
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+(Chceme zjistit hodnotu pod křivkou jen na jedné straně intervalu)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p=2*\frac{p}{2}=2*0,0062=\uuline{0,0124}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+(Výsledná pravděpodobnost je však pod křivkou na obou stranách grafu)
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p$
+\end_inset
+
+-value je tedy 
+\begin_inset Formula $0,0124=1,24\%$
+\end_inset
+
+.
+ V tomto bodě se přesně láme zamítnout/nezamítnout hypotézu.
+ Pro zamítnutí potřebujeme hodnotu větší, tedy výsledek
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p\text{-value}=\uuline{0,0124+\epsilon}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 17
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Mějme dvě veličiny 
+\begin_inset Formula $X_{1}\sim\text{Geom}\left(p_{1}\right)$
+\end_inset
+
+a 
+\begin_inset Formula $X_{2}\sim\text{Geom}\left(p_{2}\right)$
+\end_inset
+
+.
+ Určete rozdělení 
+\begin_inset Formula $Y=\text{min}\left(X_{1},\, X_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 18
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Mějme Markovský řetězec v diskrétním čase
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/priklad18_markov_v_diskretnim_case.svg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(A)]
+\end_layout
+
+\end_inset
+
+Definujte transientní stav.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(B)]
+\end_layout
+
+\end_inset
+
+Spočtěte stacionární rozdělení.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(C)]
+\end_layout
+
+\end_inset
+
+Nalezněte transientní stavy.
+ Zdůvodněte.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
