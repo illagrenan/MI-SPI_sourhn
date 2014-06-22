@@ -3678,7 +3678,7 @@ a
 
 .
  Určete rozdělení 
-\begin_inset Formula $Y=\text{min}\left(X_{1},\, X_{2}\right)$
+\begin_inset Formula $Y=\text{min}\left\{ X_{1},\, X_{2}\right\} $
 \end_inset
 
 .
@@ -3728,6 +3728,55 @@ height "1pt"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Budeme zkoumat 
+\begin_inset Formula 
+\[
+P\left(\text{min}\left\{ X_{1},\, X_{2}\right\} >k\right)=P\left(X_{1}>k,\, X_{2}>k\right)=P\left(X_{1}>k\right)P\left(X_{2}>k\right)=\ldots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Funkce přežití geometrického rozdělení je
+\begin_inset Formula 
+\[
+P\left(X>k\right)=\left(1-p\right)^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ldots=\left(1-p\right)^{k}\left(1-p\right)^{k}=\left[\left(1-p\right)^{2}\right]^{k}=\left[1-\underbrace{\left(2p-p^{2}\right)}_{p'}\right]^{k}=\boxed{\left(1-p'\right)^{k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Výsledek má stejný tvar jako funkce přežití geometrického rozdělení, tedy
+ 
+\begin_inset Formula $\text{min}\left\{ X_{1},\, X_{2}\right\} \sim Geom\left(p'\right)$
+\end_inset
+
+, kde 
+\begin_inset Formula $p'=2p-p^{2}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -4335,6 +4384,248 @@ T'=\mu-\lambda=200-140=60
 \begin_inset Formula 
 \[
 \ldots=e^{-\frac{2}{1000}*60}\doteq\uuline{0,89}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 20
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Mějme 
+\begin_inset Formula $S\sim Exp\left(\lambda\right)$
+\end_inset
+
+ a 
+\begin_inset Formula $T\sim Exp\left(\mu\right)$
+\end_inset
+
+ a 
+\begin_inset Formula $V=min\left\{ S,\, T\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(A)]
+\end_layout
+
+\end_inset
+
+Spočtěte 
+\begin_inset Formula $E\left(V\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(B)]
+\end_layout
+
+\end_inset
+
+JNajděte distribuční funkci minima.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+A)
+\end_layout
+
+\begin_layout Standard
+Nejprve musíme zjistit, jak je funkce 
+\begin_inset Formula $min\left\{ S,\, T\right\} $
+\end_inset
+
+ rozdělena a jaké má parametry:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(min\left\{ S,\, T\right\} >k\right)=P\left(S>k,\, T>k\right)=P\left(S>k\right)P\left(T>k\right)=\left(1-F_{S}\left(k\right)\right)*\left(1-F_{T}\left(k\right)\right)=\ldots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1-F_{Exp}\left(k\right)=1-\left(1-e^{-\lambda k}\right)=e^{-\lambda k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ldots=e^{-\lambda k}*e^{-\mu k}=\uuline{e^{-k\left(\lambda+\mu\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nyní víme, že 
+\begin_inset Formula $min\left\{ S,\, T\right\} $
+\end_inset
+
+ je rozděleno exponenciálně s parametrem 
+\begin_inset Formula $\left(\lambda+\mu\right)$
+\end_inset
+
+.
+ Pro střední hodnotu exponenciálního rozdělení platí
+\begin_inset Formula 
+\[
+E\left(X\sim Exp\left(\lambda\right)\right)=\frac{1}{\lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pro 
+\begin_inset Formula $V$
+\end_inset
+
+ tedy platí
+\begin_inset Formula 
+\[
+E\left(V\right)=\frac{1}{\lambda+\mu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+B)
+\end_layout
+
+\begin_layout Standard
+Již víme, že
+\begin_inset Formula 
+\[
+V\sim Exp\left(\lambda+\mu\right)
+\]
+
+\end_inset
+
+Distribuční funkce exponenciálního rozdělení 
+\begin_inset Formula $F$
+\end_inset
+
+ je
+\begin_inset Formula 
+\[
+F=1-e^{-\lambda x}
+\]
+
+\end_inset
+
+Distribuční funkce 
+\begin_inset Formula $V$
+\end_inset
+
+ je tedy
+\begin_inset Formula 
+\[
+F_{V}\left(k\right)=\uuline{1-e^{-k\left(\lambda+\mu\right)}}
 \]
 
 \end_inset

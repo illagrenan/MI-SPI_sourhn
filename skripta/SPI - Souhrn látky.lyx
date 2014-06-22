@@ -3498,6 +3498,41 @@ Detailní rovnováha
 
 \end_layout
 
+\begin_layout Subsection
+Skokové intenzity
+\end_layout
+
+\begin_layout Standard
+Matici skokových intenzit definujeme jako
+\begin_inset Formula 
+\[
+Q\left(i,\, j\right)\begin{cases}
+q\left(i,\, j\right) & \text{když }j\neq j\\
+-\lambda_{i} & \text{když }j=j
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+kde 
+\begin_inset Formula $-\lambda_{i}$
+\end_inset
+
+ je suma řádku 
+\begin_inset Formula $i$
+\end_inset
+
+ bez indexu 
+\begin_inset Formula $i=j$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Systémy hromadné obsluhy
 \end_layout
