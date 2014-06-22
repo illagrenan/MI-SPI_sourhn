@@ -1324,6 +1324,59 @@ Kovariance
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Definice
+\end_layout
+
+\begin_layout Plain Layout
+Střední hodnota součinu odchylek obou náhodných veličin 
+\begin_inset Formula $X$
+\end_inset
+
+ a 
+\begin_inset Formula $Y$
+\end_inset
+
+ od jejich středních hodnot.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Novovicova-1999"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
 cov\left(X,\, Y\right)=E\left[\left(X-E\left(X\right)\right)*\left(Y-E\left(Y\right)\right)\right]=E\left(XY\right)-E\left(X\right)E\left(Y\right)
@@ -1371,6 +1424,23 @@ a
 \end_inset
 
  jsou nezávislé.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dále platí, že
+\begin_inset Formula 
+\begin{eqnarray*}
+cov\left(X.\, Y\right) & = & cov\left(Y,\, X\right)\\
+cov\left(X,\, X\right) & = & var\left(X\right)
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1425,11 +1495,15 @@ centering
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Distribuční funkce (
+
+\series bold
+Distribuční funkce
+\series default
+ (
 \begin_inset Formula $F$
 \end_inset
 
@@ -1438,7 +1512,7 @@ Distribuční funkce (
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1456,6 +1530,8 @@ Distribuční funkce (
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Hustota
 \end_layout
 
@@ -1479,6 +1555,8 @@ Hustota
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 Funkce přežití
 \end_layout
 
@@ -2162,7 +2240,12 @@ Exponenciální,
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1-e^{-\lambda x}$
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbb{P}\left(X\leq x\right) & = & 1-e^{-\lambda x}\\
+\mathbb{P}\left(X>x\right) & = & e^{-\lambda x}
+\end{eqnarray*}
+
 \end_inset
 
 
@@ -2759,7 +2842,7 @@ S\sim Exp\left(\lambda\right),\, T\sim Exp\left(\mu\right)
 \begin_inset Formula $T$
 \end_inset
 
- jsou náhodně rozdělené.)
+ jsou exponenciálně rozdělené.)
 \end_layout
 
 \end_inset
@@ -3010,7 +3093,7 @@ Q & R\\
 \begin_inset Formula $P$
 \end_inset
 
- je fundamentální matice, 
+ -- matice přechodů, 
 \begin_inset Formula $Q$
 \end_inset
 
@@ -3018,11 +3101,15 @@ Q & R\\
 \begin_inset Formula $R$
 \end_inset
 
- -- rekurentní stavy, 
+ -- rekurentní /absorbující/ stavy, 
 \begin_inset Formula $1$
 \end_inset
 
- -- jednotková matice)
+ -- jednotková matice, 
+\begin_inset Formula $0$
+\end_inset
+
+ -- matice nul)
 \end_layout
 
 \end_inset
@@ -3031,18 +3118,43 @@ Q & R\\
 \end_layout
 
 \begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Fundamentální matice
+\end_layout
+
+\begin_layout Plain Layout
 Předpokládaný počet průchodů v tranzientním (
 \begin_inset Formula $Q$
 \end_inset
 
-) stavu vypočítáme pomocí matice 
+) stavu vypočítáme pomocí 
+\series bold
+fundamentální matice
+\series default
+ 
 \begin_inset Formula $N$
 \end_inset
 
 :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 N=\left(1-Q\right)^{-1}
@@ -3053,15 +3165,13 @@ N=\left(1-Q\right)^{-1}
 
 \end_layout
 
-\begin_layout Standard
-Počet průchodů po určitém čase spočteme jako
-\end_layout
+\begin_layout Plain Layout
+\begin_inset Formula $N_{i,j}=\mathbb{E}\left(\text{počet průchodů stavem j}|\text{začínáme ve stavu i}\right)$
+\end_inset
 
-\begin_layout Standard
-\begin_inset Formula 
-\[
-N=\left(1-Q^{n}\right)^{-1}
-\]
+, zároveň součet řádku je střední doba absorpce, pokud začínáme v určitém
+ stavu.
+\end_layout
 
 \end_inset
 
@@ -3069,6 +3179,34 @@ N=\left(1-Q^{n}\right)^{-1}
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Inverzní matice
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 A^{-1}=\frac{1}{\text{det}A}*\text{adj}A
@@ -3079,18 +3217,36 @@ A^{-1}=\frac{1}{\text{det}A}*\text{adj}A
 
 \end_layout
 
-\begin_layout Standard
-Adjungovaná matice je matice subdeterminantů vynásobená maticí znamének:
+\begin_layout Plain Layout
+
+\series bold
+Adjungovaná matice
+\series default
+ je 
+\series bold
+transponovaná
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Prohodíme sloupce a řádky
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+ 
+\series default
+matice subdeterminantů vynásobená mřížkou znamének:
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 \begin{pmatrix}+ & - & + & \cdots\\
 - & + & - & \cdots\\
 + & - & + & \cdots\\
 \vdots & \vdots & \vdots & \cdots
-\end{pmatrix}
+\end{pmatrix}^{\mathbf{T}}
 \]
 
 \end_inset
@@ -3098,20 +3254,49 @@ Adjungovaná matice je matice subdeterminantů vynásobená maticí znamének:
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $N_{i,j}=\mathbb{E}\left(\text{počet průchodů stavem j}|\text{začínáme ve stavu i}\right)$
 \end_inset
 
-, zároveň součet řádku je střední doba absorpce, pokud začínáme v určitém
- stavu.
+
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Pravděpodobnostní matice
+\end_layout
+
+\begin_layout Plain Layout
 Pravděpodobnost, že spadneme do rekurentního stavu stavu 
 \begin_inset Quotes gld
 \end_inset
 
-j
+
+\begin_inset Formula $j$
+\end_inset
+
+
 \begin_inset Quotes grd
 \end_inset
 
@@ -3119,14 +3304,18 @@ j
 \begin_inset Quotes gld
 \end_inset
 
-i
+
+\begin_inset Formula $i$
+\end_inset
+
+
 \begin_inset Quotes grd
 \end_inset
 
  je
 \begin_inset Formula 
 \[
-B_{i,j}=\mathbb{P}\left(i|j\right)
+B_{i,j}=\mathbb{P}\left(\text{pohlcení v }s_{j}|\text{start v }s_{i}\right)
 \]
 
 \end_inset
@@ -3134,7 +3323,7 @@ B_{i,j}=\mathbb{P}\left(i|j\right)
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Matici 
 \begin_inset Formula $B$
 \end_inset
@@ -3145,6 +3334,31 @@ Matici
 B=N*R
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+(Nezapomeňme, že matice 
+\begin_inset Formula $B$
+\end_inset
+
+ kopíruje označení sloupců a řádků z matice přechodů 
+\begin_inset Formula $P$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
 \end_inset
 
 
@@ -3185,7 +3399,15 @@ centering
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Násobení matic
+Násobení matic, vynásobíme prvek z 
+\begin_inset Formula $A$
+\end_inset
+
+ s prvkem z 
+\begin_inset Formula $B$
+\end_inset
+
+ a výsledky sečteme
 \end_layout
 
 \end_inset
@@ -3281,7 +3503,7 @@ Systémy hromadné obsluhy
 \end_layout
 
 \begin_layout Standard
-Tři modely:
+Tři modely systému:
 \end_layout
 
 \begin_layout Itemize
@@ -3306,16 +3528,77 @@ Tři modely:
 \end_layout
 
 \begin_layout Standard
-Míra vytížení:
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Parametry systémů
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\rho=\frac{\lambda}{\mu}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace -0.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+(
+\series bold
+míra vytížení
+\series default
+; 
+\begin_inset Formula $\rho$
+\end_inset
+
+ musí být 
+\begin_inset Formula $\rho<1$
+\end_inset
+
+, aby systém pracoval)
+\begin_inset Newline newline
+\end_inset
+
+(
+\begin_inset Formula $\lambda$
+\end_inset
+
+ -- 
+\series bold
+intenzita příchodů
+\series default
+)
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{eqnarray*}
-\rho & = & \frac{\lambda}{\mu}\\
-\mu & = & \frac{1}{T}\\
-\lambda & = & \text{intenzita příchodů}\\
-\mu & = & \text{intenzita obsluhy}
+\mu & = & \frac{1}{T_{S}}
 \end{eqnarray*}
 
 \end_inset
@@ -3323,17 +3606,82 @@ Míra vytížení:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
+\begin_inset VSpace -0.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \align center
-(míra vytížení 
-\begin_inset Formula $\rho$
+(
+\begin_inset Formula $\mu$
 \end_inset
 
- musí být 
-\begin_inset Formula $<1$
+ -- 
+\series bold
+intenzita obsluhy
+\series default
+, 
+\begin_inset Formula $T_{S}$
 \end_inset
 
-, aby systém pracoval)
+ -- 
+\series bold
+doba obsluhy
+\series default
+)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+N=\rho*\frac{1}{1-\rho}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace -0.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+(
+\begin_inset Formula $N$
+\end_inset
+
+ -- průměrný celkový 
+\series bold
+počet požadavků
+\series default
+ v systému)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.2cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3646,6 +3994,33 @@ status open
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Novovičová-1999"
+key "Novovicova-1999"
+
+\end_inset
+
+NOVOVIČOVÁ, CSC.
+ 
+\shape italic
+Pravděpodobnost a matematická statistika
+\shape default
+.
+ Praha, 1999.
+ Skripta.
+ České vysoké učení technické v Praze.
+ Dostupné [online] z 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://euler.fd.cvut.cz/publikace/files/skripta3.pdf"
 
 \end_inset
 
