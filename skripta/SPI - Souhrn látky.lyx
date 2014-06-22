@@ -3666,6 +3666,54 @@ počet požadavků
 \end_layout
 
 \begin_layout Plain Layout
+
+\series bold
+\bar under
+Průměrný čas ve frontě/systému
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\boxed{\rho=N_{S}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray*}
+N & = & \lambda*T\\
+T & = & T_{Q}+T_{S}\\
+N & = & \underbrace{N_{Q}}_{\text{Fronta}}+\underbrace{N_{S}}_{\text{Obsluha}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+(
+\begin_inset Formula $T$
+\end_inset
+
+ -- celkový průměrný čas v systému, 
+\begin_inset Formula $T_{Q}$
+\end_inset
+
+ -- průměrný čas ve frontě/čekání, 
+\begin_inset Formula $T_{S}$
+\end_inset
+
+ -- průměrný čas zpracování požadavku)
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset VSpace 0.2cm
 \end_inset
 
@@ -3715,38 +3763,12 @@ střední počet požadavků v systému
 \begin_inset Formula 
 \begin{eqnarray*}
 N & = & \sum_{n=0}^{\infty}n*\pi_{n}\\
-N & = & \underbrace{N_{Q}}_{\text{Fronta}}+\underbrace{N_{S}}_{\text{Obsluha}}\\
 N_{S} & = & \lambda*T_{S}
 \end{eqnarray*}
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Průměrný čas ve frontě/systému:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-N & = & \lambda*T\\
-T & = & T_{Q}+T_{S}
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-(
-\begin_inset Formula $T$
-\end_inset
-
- -- průměrný čas v systému)
 \end_layout
 
 \begin_layout Section

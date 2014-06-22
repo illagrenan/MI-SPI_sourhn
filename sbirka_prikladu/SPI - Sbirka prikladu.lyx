@@ -3968,5 +3968,379 @@ Tranzientní stavy jsou stavy
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Příklad 19
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Uvažujme databázový server, na který požadavky přicházejí dle Poissonova
+ procesu s intenzitou 
+\begin_inset Formula $140$
+\end_inset
+
+ požadavků za sekundu.
+ Předpokládejme, že doba obsluhy 
+\begin_inset Formula $T$
+\end_inset
+
+ má exponenciální rozdělení a trvá v průměru 
+\begin_inset Formula $5ms$
+\end_inset
+
+.
+ Předpokládejme dále, že server má nekonečnou frontu pro čekající požadavky
+ a že časy příchodů požadavků jsou nezávislé od délky obsluhy.
+ V následujících otázkách uvažujeme stav serveru z dlouhodobého hlediska
+ poté, když se již stabilizoval.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(A)]
+\end_layout
+
+\end_inset
+
+Kolik požadavků je celkem průměrně v systému, kolik jich průměrně čeká na
+ zpracování a kolik jich je v průměru zpracováno?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(B)]
+\end_layout
+
+\end_inset
+
+Jaká je pravděpodobnost, že v systému bude přesně 
+\begin_inset Formula $6$
+\end_inset
+
+ požadavků?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(C)]
+\end_layout
+
+\end_inset
+
+Jaká je průměrná doba čekání ve frontě a jaká je průměrná doba zpracování
+ požadavku?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[(D)]
+\end_layout
+
+\end_inset
+
+Za předpokladu, že příchozí požadavek není ihned zpracován, jaká je pravděpodobn
+ost, že bude zpracování trvat délek než 
+\begin_inset Formula $20ms$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+A)
+\end_layout
+
+\begin_layout Standard
+Počet požadavků v systému spočteme jako:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset Formula 
+\[
+N=\rho*\frac{1}{1-\rho}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda=140\, rps,\, T_{S}=5\, ms=5*\frac{1}{1000}\, s
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Intenzita obsluhy
+\begin_inset Formula 
+\[
+\mu=\frac{1}{T_{S}}=\frac{1}{\frac{5}{1000}}=200\, rps
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Míra vytížení systému 
+\begin_inset Formula $\rho$
+\end_inset
+
+ je
+\begin_inset Formula 
+\[
+\rho=\frac{\lambda}{\mu}=\frac{140}{200}=\frac{7}{10}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nyní máme vše pro vypočítání počtu požadavků v systému (
+\begin_inset Formula $N$
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+N=\rho*\frac{1}{1-\rho}=\frac{7}{10}*\frac{1}{1-\frac{7}{10}}=\uuline{\frac{7}{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nyní použijeme vztah pro celkový průměrný počet požadavků v systému 
+\begin_inset Formula $N$
+\end_inset
+
+: (pozn.: Q -- queue, S -- service)
+\begin_inset Formula 
+\begin{eqnarray*}
+N & = & N_{Q}+N_{S}\\
+\frac{7}{3} & = & N_{Q}+\frac{7}{10}\text{ (protože }N_{S}=\rho\text{)}\\
+N_{Q} & = & \uuline{\frac{49}{30}\doteq1,63}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+B)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(n=6\right)=\rho^{n}\left(1-\rho\right)=\left(\frac{7}{10}\right)^{6}\left(1-\frac{7}{10}\right)\doteq\uuline{0,035}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+C)
+\end_layout
+
+\begin_layout Standard
+Využijeme vztahu
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{T} & \mathbf{=} & \mathbf{T_{Q}+T_{S}}\\
+T_{Q} & = & T-T_{S}\\
+T_{Q} & = & T-\frac{5}{1000}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Celkový čas požadavku v systému 
+\begin_inset Formula $T$
+\end_inset
+
+ neznáme, využijeme vztahu
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathbf{N} & \mathbf{=} & \mathbf{\lambda*T}\\
+\frac{7}{3} & = & 140*T\\
+T & = & \frac{1}{60}s
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{Q}=\frac{1}{60}-\frac{5}{1000}=\uuline{\frac{7}{600}s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+D)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2ms=\frac{2}{1000}s
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(X>\frac{2}{1000}\right)=e^{-x*T'}=\ldots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T'=\mu-\lambda=200-140=60
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ldots=e^{-\frac{2}{1000}*60}\doteq\uuline{0,89}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
