@@ -1348,7 +1348,7 @@ B)
 
 \begin_layout Standard
 Sestrojme matici přechodů 
-\begin_inset Formula $Q$
+\begin_inset Formula $P$
 \end_inset
 
 
@@ -1357,7 +1357,7 @@ Sestrojme matici přechodů
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Q=\begin{array}{cc}
+P=\begin{array}{cc}
  & \begin{array}{cccc}
 s_{1} & s_{2} & s_{3} & s_{4}\end{array}\\
 \begin{array}{c}
@@ -1383,7 +1383,7 @@ Protože je markovským řetězcem popsán jev diskrétní, platí pro stacioná
  rozdělení:
 \begin_inset Formula 
 \[
-\pi:\,\pi*Q=\pi
+\pi:\,\pi*P=\pi
 \]
 
 \end_inset
