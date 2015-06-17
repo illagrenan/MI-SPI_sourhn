@@ -122,7 +122,7 @@
 
 \series bold
 \size giant
-Statistika pro informatiku
+Statistika pro informatiku [MI-SPI]
 \end_layout
 
 \begin_layout Standard
@@ -140,7 +140,52 @@ Souhrn látky
 \align center
 
 \size large
-březen 2015
+červen 2015
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Rozšiřte, upravte či opravte tento text na 
+\begin_inset CommandInset href
+LatexCommand href
+name "https://github.com/illagrenan/MI-SPI_sourhn"
+target "https://github.com/illagrenan/MI-SPI_sourhn"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align right
+\begin_inset Graphics
+	filename images/by-sa.svg
+	width 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\size footnotesize
+Licence 
+\begin_inset CommandInset href
+LatexCommand href
+name "CC BY-SA 4.0"
+target "https://creativecommons.org/licenses/by-sa/4.0/"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1174,9 +1219,9 @@ status open
 \begin{eqnarray*}
 \mathbb{E}\left(aX+Y\right) & = & a\mathbb{E}\left(X\right)+\mathbb{E}\left(Y\right)~\text{(linearita)}\\
 \mathbb{E}\left(X\pm Y\right) & = & \mathbb{E}\left(X\right)\pm\mathbb{E}\left(Y\right)\\
-\mathbb{E}\left(X+Y\right) & = & \mathbb{E}\left(max\left\{ X,\, Y\right\} \right)+\mathbb{E}\left(min\left\{ X,\, Y\right\} \right)\\
+\mathbb{E}\left(X+Y\right) & = & \mathbb{E}\left(max\left\{ X,\,Y\right\} \right)+\mathbb{E}\left(min\left\{ X,\,Y\right\} \right)\\
 \mathbb{E}X^{2} & = & \sum_{i}p_{i}x_{i}^{2}\,\text{(pro diskrétní jevy)}\\
-\mathbb{E}\left(\text{max}\left\{ X,\, Y\right\} \right) & = & \mathbb{E}\left(X\right)+E\left(Y\right)-\mathbb{E}\left(\text{min}\left\{ X,\, Y\right\} \right)\\
+\mathbb{E}\left(\text{max}\left\{ X,\,Y\right\} \right) & = & \mathbb{E}\left(X\right)+E\left(Y\right)-\mathbb{E}\left(\text{min}\left\{ X,\,Y\right\} \right)\\
 \mathbb{E}\left(XY\right) & = & \mathbb{E}X*\mathbb{E}Y\,\text{(platí jen pro nezávislé jevy)}
 \end{eqnarray*}
 
@@ -1232,10 +1277,10 @@ Dále platí:
 \begin_inset Formula 
 \begin{eqnarray*}
 var\left(X\right) & = & E\left[\left(X-E\left(X\right)\right)^{2}\right]=E\left(X^{2}\right)-\left(E\left(X\right)\right)^{2}\\
-var\left(X\right) & = & cov\left(X,\, X\right)\\
+var\left(X\right) & = & cov\left(X,\,X\right)\\
 var\left(aX\right) & = & a^{2}var\left(X\right)\\
 var\left(X+a\right) & = & var\left(X\right)\\
-var\left(X\pm Y\right) & = & var\left(X\right)+var\left(Y\right)\pm2cov\left(X,\, Y\right)
+var\left(X\pm Y\right) & = & var\left(X\right)+var\left(Y\right)\pm2cov\left(X,\,Y\right)
 \end{eqnarray*}
 
 \end_inset
@@ -1378,7 +1423,7 @@ key "Novovicova-1999"
 \begin_layout Standard
 \begin_inset Formula 
 \[
-cov\left(X,\, Y\right)=E\left[\left(X-E\left(X\right)\right)*\left(Y-E\left(Y\right)\right)\right]=E\left(XY\right)-E\left(X\right)E\left(Y\right)
+cov\left(X,\,Y\right)=E\left[\left(X-E\left(X\right)\right)*\left(Y-E\left(Y\right)\right)\right]=E\left(XY\right)-E\left(X\right)E\left(Y\right)
 \]
 
 \end_inset
@@ -1393,7 +1438,7 @@ Platí, že pokud
 \begin_layout Standard
 \begin_inset Formula 
 \[
-cov\left(X,\, Y\right)=0
+cov\left(X,\,Y\right)=0
 \]
 
 \end_inset
@@ -1433,8 +1478,8 @@ a
 Dále platí, že
 \begin_inset Formula 
 \begin{eqnarray*}
-cov\left(X.\, Y\right) & = & cov\left(Y,\, X\right)\\
-cov\left(X,\, X\right) & = & var\left(X\right)
+cov\left(X.\,Y\right) & = & cov\left(Y,\,X\right)\\
+cov\left(X,\,X\right) & = & var\left(X\right)
 \end{eqnarray*}
 
 \end_inset
@@ -1449,7 +1494,7 @@ Korelační koeficient
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\rho\left(X,\, Y\right)=\frac{cov\left(X,\, Y\right)}{\sigma_{x}*\sigma_{y}}=\frac{cov\left(X,\, Y\right)}{\sqrt{var\left(X\right)}*\sqrt{var\left(Y\right)}}
+\rho\left(X,\,Y\right)=\frac{cov\left(X,\,Y\right)}{\sigma_{x}*\sigma_{y}}=\frac{cov\left(X,\,Y\right)}{\sqrt{var\left(X\right)}*\sqrt{var\left(Y\right)}}
 \]
 
 \end_inset
@@ -2154,7 +2199,7 @@ Rovnoměrné,
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\frac{1}{b-a};\, x\in\left[a,b\right]$
+\begin_inset Formula $\frac{1}{b-a};\,x\in\left[a,b\right]$
 \end_inset
 
 
@@ -2227,7 +2272,7 @@ Exponenciální,
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\lambda e^{-\lambda x};\, x\in\left[0,+\infty\right)$
+\begin_inset Formula $\lambda e^{-\lambda x};\,x\in\left[0,+\infty\right)$
 \end_inset
 
 
@@ -2443,7 +2488,7 @@ H\left(X,Y\right)=-\sum_{i,j}p_{i,j}\log p_{i,j}
 \begin_layout Standard
 \align center
 (sdružená hustota 
-\begin_inset Formula $p_{i,j}=P\left(X=x_{i},\, Y=Y_{j}\right)$
+\begin_inset Formula $p_{i,j}=P\left(X=x_{i},\,Y=Y_{j}\right)$
 \end_inset
 
 )
@@ -2471,12 +2516,12 @@ status open
 \begin_inset Formula 
 \begin{eqnarray*}
 H\left(X|Y\right) & = & -\sum_{i,j}p\left(x_{i},y_{i}\right)\log p\left(y_{j}|x_{i}\right)\\
-H\left(X|Y\right) & = & H\left(X,\, Y\right)-H\left(Y\right)\\
-\mathbb{P}\left(x_{i}|y_{j}\right) & = & \frac{\mathbb{P}\left(x_{i},\, y_{j}\right)}{\mathbb{P}\left(y_{i}\right)}\,\begin{array}{c}
+H\left(X|Y\right) & = & H\left(X,\,Y\right)-H\left(Y\right)\\
+\mathbb{P}\left(x_{i}|y_{j}\right) & = & \frac{\mathbb{P}\left(x_{i},\,y_{j}\right)}{\mathbb{P}\left(y_{i}\right)}\,\begin{array}{c}
 \text{sdružená hustota}\\
 \text{marginální hustota}
 \end{array}\\
-\mathbb{P}\left(X,\, Y\right) & = & \mathbb{P}\left(X|Y\right)*\mathbb{P}\left(Y\right)
+\mathbb{P}\left(X,\,Y\right) & = & \mathbb{P}\left(X|Y\right)*\mathbb{P}\left(Y\right)
 \end{eqnarray*}
 
 \end_inset
@@ -2510,11 +2555,11 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{eqnarray*}
-I\left(X;\, Y\right) & = & H\left(X\right)-H\left(X|Y\right)\\
-I\left(X;\, Y\right) & = & H\left(Y\right)-H\left(Y|X\right)\\
-I\left(X;\, Y\right) & = & H\left(X\right)+H\left(Y\right)-H\left(X,\, Y\right)\\
-I\left(X;\, Y\right) & = & I\left(Y;\, X\right)\\
-I\left(X;\, X\right) & = & H\left(X\right)
+I\left(X;\,Y\right) & = & H\left(X\right)-H\left(X|Y\right)\\
+I\left(X;\,Y\right) & = & H\left(Y\right)-H\left(Y|X\right)\\
+I\left(X;\,Y\right) & = & H\left(X\right)+H\left(Y\right)-H\left(X,\,Y\right)\\
+I\left(X;\,Y\right) & = & I\left(Y;\,X\right)\\
+I\left(X;\,X\right) & = & H\left(X\right)
 \end{eqnarray*}
 
 \end_inset
@@ -2525,7 +2570,7 @@ I\left(X;\, X\right) & = & H\left(X\right)
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-I\left(X,\, Y\right)=\sum_{i,\, j}p_{i,j}\text{log}\frac{p_{i,j}}{p_{i}*p_{j}}=\ldots=H\left(X\right)-H\left(X|Y\right)
+I\left(X,\,Y\right)=\sum_{i,\,j}p_{i,j}\text{log}\frac{p_{i,j}}{p_{i}*p_{j}}=\ldots=H\left(X\right)-H\left(X|Y\right)
 \]
 
 \end_inset
@@ -2574,7 +2619,7 @@ centering
 
 \begin_layout Plain Layout
 Vzájemná informace a entropie (tedy 
-\begin_inset Formula $H\left(X,\, Y\right)$
+\begin_inset Formula $H\left(X,\,Y\right)$
 \end_inset
 
 )
@@ -2776,9 +2821,9 @@ triku
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{eqnarray*}
-R_{x}\left(t_{1},\, t_{2}\right) & = & \mathbb{E}\left[X\left(t_{1}\right)*X\left(t_{2}\right)\right]=0*\mathbb{P}\left(X\left(t_{1}\right)*X\left(t_{2}\right)=0\right)+1*\mathbb{P}\left(X\left(t_{1}\right)*X\left(t_{2}\right)=1\right)\\
- & = & \mathbb{P}\left(X\left(t_{1}\right)*X\left(t_{2}\right)=1\right)=\mathbb{P}\left(X\left(t_{1}\right)=1,\, X\left(t_{2}\right)=1\right)=\\
- & = & \boxed{\mathbb{P}\left(t_{1}\leq A,\, t_{2}\leq A\right)=\mathbb{P}\left(A\geq t_{1},\, t_{2}\geq A\right)=P\left(A\geq t_{2}\right)}
+R_{x}\left(t_{1},\,t_{2}\right) & = & \mathbb{E}\left[X\left(t_{1}\right)*X\left(t_{2}\right)\right]=0*\mathbb{P}\left(X\left(t_{1}\right)*X\left(t_{2}\right)=0\right)+1*\mathbb{P}\left(X\left(t_{1}\right)*X\left(t_{2}\right)=1\right)\\
+ & = & \mathbb{P}\left(X\left(t_{1}\right)*X\left(t_{2}\right)=1\right)=\mathbb{P}\left(X\left(t_{1}\right)=1,\,X\left(t_{2}\right)=1\right)=\\
+ & = & \boxed{\mathbb{P}\left(t_{1}\leq A,\,t_{2}\leq A\right)=\mathbb{P}\left(A\geq t_{1},\,t_{2}\geq A\right)=P\left(A\geq t_{2}\right)}
 \end{eqnarray*}
 
 \end_inset
@@ -2823,7 +2868,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-S\sim Exp\left(\lambda\right),\, T\sim Exp\left(\mu\right)
+S\sim Exp\left(\lambda\right),\,T\sim Exp\left(\mu\right)
 \]
 
 \end_inset
@@ -2863,8 +2908,8 @@ S\sim Exp\left(\lambda\right),\, T\sim Exp\left(\mu\right)
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-\mathbb{E}\text{max}\left\{ S,\, T\right\}  & = & \mathbb{E}\left(S\right)+\mathbb{E}\left(T\right)-\mathbb{E}\text{min}\left\{ S,\, T\right\} \\
-\mathbb{E}\text{min}\left\{ S,\, T\right\}  & = & \frac{1}{\lambda+\mu}\\
+\mathbb{E}\text{max}\left\{ S,\,T\right\}  & = & \mathbb{E}\left(S\right)+\mathbb{E}\left(T\right)-\mathbb{E}\text{min}\left\{ S,\,T\right\} \\
+\mathbb{E}\text{min}\left\{ S,\,T\right\}  & = & \frac{1}{\lambda+\mu}\\
 \mathbb{P}\left(T<S\right) & = & \frac{\mu}{\lambda+\mu}\\
 \mathbb{P}\left(S<T\right) & = & \frac{\lambda}{\lambda+\mu}
 \end{eqnarray*}
@@ -2948,7 +2993,7 @@ Markovova podmínka
 \begin_layout Standard
 \begin_inset Formula 
 \[
-P\left(X_{n}=s_{j}|X_{0}=s_{0},\, X_{1}=s_{1},\,\ldots,\, X_{n-1}=s_{i}\right)=P\left(X_{n}=s_{j}|X_{n-1}=s_{i}\right)=P_{ij}
+P\left(X_{n}=s_{j}|X_{0}=s_{0},\,X_{1}=s_{1},\,\ldots,\,X_{n-1}=s_{i}\right)=P\left(X_{n}=s_{j}|X_{n-1}=s_{i}\right)=P_{ij}
 \]
 
 \end_inset
@@ -2964,7 +3009,7 @@ Matice přechodů
 
 \begin_inset Formula 
 \[
-\mathbb{P}_{i,j}=p\left(i,\, j\right)=P\left(X_{n+1}=s_{j}|X_{n}=s_{i}\right)=p_{i,j}
+\mathbb{P}_{i,j}=p\left(i,\,j\right)=P\left(X_{n+1}=s_{j}|X_{n}=s_{i}\right)=p_{i,j}
 \]
 
 \end_inset
@@ -3489,7 +3534,7 @@ U obou platí
 Detailní rovnováha
 \begin_inset Formula 
 \[
-\pi_{i}p_{i,j}=\pi_{j}p_{j,i}\,\forall i,\, j
+\pi_{i}p_{i,j}=\pi_{j}p_{j,i}\,\forall i,\,j
 \]
 
 \end_inset
@@ -3833,7 +3878,7 @@ Konfidenční intervaly
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mu\in\left(\overline{X}_{n}-\EuScript{T}_{\frac{\alpha}{2};\, n-1}\frac{\EuScript{S}_{n}}{\sqrt{n}};\,\overline{X}_{n}+\EuScript{T}_{\frac{\alpha}{2};\, n-1}\frac{\EuScript{S}_{n}}{\sqrt{n}}\right)
+\mu\in\left(\overline{X}_{n}-\EuScript{T}_{\frac{\alpha}{2};\,n-1}\frac{\EuScript{S}_{n}}{\sqrt{n}};\,\overline{X}_{n}+\EuScript{T}_{\frac{\alpha}{2};\,n-1}\frac{\EuScript{S}_{n}}{\sqrt{n}}\right)
 \]
 
 \end_inset
