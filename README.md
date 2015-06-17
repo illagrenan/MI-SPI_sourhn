@@ -4,8 +4,8 @@
 
 Aktuální build PDF je ve složce `pdf/`:
 
-- :pencil: **[Stáhnout Sbírku příkladů [PDF]](https://github.com/illagrenan/MI-SPI_sourhn/blob/master/pdf/SPI%20-%20Sbirka%20prikladu.pdf)** 
-- :blue_book: **[Stáhnout Souhrn látky [PDF]](https://github.com/illagrenan/MI-SPI_sourhn/blob/master/pdf/SPI%20-%20Souhrn%20l%C3%A1tky.pdf)** 
+- :pencil: **[Stáhnout Sbírku příkladů [PDF]](https://github.com/illagrenan/MI-SPI_sourhn/raw/master/pdf/SPI%20-%20Sbirka%20prikladu.pdf)** 
+- :blue_book: **[Stáhnout Souhrn látky [PDF]](https://github.com/illagrenan/MI-SPI_sourhn/raw/master/pdf/SPI%20-%20Souhrn%20l%C3%A1tky.pdf)** 
 
 ## Chci přispět ##
 
