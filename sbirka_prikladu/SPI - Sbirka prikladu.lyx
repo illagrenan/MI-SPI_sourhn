@@ -275,7 +275,7 @@ Příklad 2
 \end_inset
 
 Vyjádřete výraz 
-\begin_inset Formula $P\left(X_{n+2}=j,\, X_{n+1}=k,\, X_{n}=i\right)|P\left(X_{n}=i\right)$
+\begin_inset Formula $P\left(X_{n+2}=j,\,X_{n+1}=k,\,X_{n}=i\right)|P\left(X_{n}=i\right)$
 \end_inset
 
  pomocí přechodových pravděpodobností 
@@ -422,7 +422,7 @@ Předpokládejme dobu čekání
  Snažíme se tedy dokázat
 \begin_inset Formula 
 \[
-P\left(T-s>k|T>s\right)\overset{?}{=}P\left(T>k\right)\,\text{pro}\, k,\, s>0\text{.}
+P\left(T-s>k|T>s\right)\overset{?}{=}P\left(T>k\right)\,\text{pro}\,k,\,s>0\text{.}
 \]
 
 \end_inset
@@ -746,7 +746,7 @@ Emax\left\{ S,T\right\}  & = & E\left(S\right)+E\left(T\right)-Emin\left\{ S,T\r
 Za předpokladu
 \begin_inset Formula 
 \[
-S\sim\text{Exp}\left(\lambda\right),\, T\sim\text{Exp}\left(\mu\right)
+S\sim\text{Exp}\left(\lambda\right),\,T\sim\text{Exp}\left(\mu\right)
 \]
 
 \end_inset
@@ -762,7 +762,7 @@ S\sim\text{Exp}\left(\lambda\right),\, T\sim\text{Exp}\left(\mu\right)
 \begin_layout Standard
 \begin_inset Formula 
 \[
-S_{1}\sim\text{Exp}\left(\lambda\right),\, E\left(S_{1}\right)=25ms,\,\lambda=\frac{1}{E\left(S_{1}\right)}\rightarrow\lambda=\frac{1}{25}
+S_{1}\sim\text{Exp}\left(\lambda\right),\,E\left(S_{1}\right)=25ms,\,\lambda=\frac{1}{E\left(S_{1}\right)}\rightarrow\lambda=\frac{1}{25}
 \]
 
 \end_inset
@@ -773,7 +773,7 @@ S_{1}\sim\text{Exp}\left(\lambda\right),\, E\left(S_{1}\right)=25ms,\,\lambda=\f
 \begin_layout Standard
 \begin_inset Formula 
 \[
-S_{2}\sim\text{Exp}\left(\mu\right),\, E\left(S_{2}\right)=25ms,\,\mu=\frac{1}{E\left(S_{2}\right)}\rightarrow\mu=\frac{1}{25}
+S_{2}\sim\text{Exp}\left(\mu\right),\,E\left(S_{2}\right)=25ms,\,\mu=\frac{1}{E\left(S_{2}\right)}\rightarrow\mu=\frac{1}{25}
 \]
 
 \end_inset
@@ -880,9 +880,183 @@ Spočtěte entropii geometrického rozdělení,
 \end_inset
 
 .
+\begin_inset VSpace bigskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "50col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hustota geometrického rozdělení je 
+\begin_inset Formula $P\left(X\text{=x}\right)=(1-p)^{k-1}*p$
+\end_inset
+
+.
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Použijeme standardní vzorec na výpočet entropie: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{b}(X)=-\sum p_{i}*log_{b}(p_{i}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{2}(X)=-\sum(((1-p)^{k-1}*p)*log_{2}((1-p)^{k-1}*p)=-p*\sum(log_{2}(((1-p)^{k-1}*p)^{(1-p)^{k-1}})=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=-p*\sum[(log_{2}(((1-p)^{(k-1)}{}^{(1-p)^{k-1}}+(log_{2}(p)^{(1-p)^{k-1}})]=-p*\sum[(k-1)*(1-p)^{k-1}*log_{2}(1-p)]-p*\sum[(1-p)^{k-1}log_{2}(p)]=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=-p*log_{2}(1-p)*\sum[(k-1)*(1-p)^{k-1}]-p*log_{2}(p)*\sum[(1-p)^{k-1}]=..
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+1.
+ sumu spočítáme pomocí vzorce 
+\begin_inset Formula 
+\[
+\sum n*r^{n}\text{=}\frac{r}{(1-r)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+takže výsledek první sumy je 
+\begin_inset Formula $\frac{1-p}{p^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+2.
+ sumu spočítáme pomocí vzorce (když 
+\begin_inset Formula $|q|\leq1)$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+S_{n}\text{=}\frac{1}{1-q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+takže výsledek druhé sumy je 
+\begin_inset Formula $\frac{1}{p}$
+\end_inset
+
+.
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Obecná entropie je tedy rovna:
+\begin_inset Formula 
+\[
+H_{2}(X)\text{=}-\frac{log_{2}(1-p)*(1-p)}{p}-log_{2}(p)
+\]
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+v případě
+\begin_inset Formula $p=\frac{1}{2}$
+\end_inset
+
+, tedy 
+\begin_inset Formula $H_{2}(X)$
+\end_inset
+
+=
+\series bold
+2
+\series default
+
 \begin_inset Newpage newpage
 \end_inset
 
@@ -1499,11 +1673,11 @@ Příklad 9
 \end_inset
 
 Tři výrobky 
-\begin_inset Formula $A,\, B,\, C$
+\begin_inset Formula $A,\,B,\,C$
 \end_inset
 
  mají následující pravděpodobnosti nákupu: 
-\begin_inset Formula $A=0,9,\, B=0,8$
+\begin_inset Formula $A=0,9,\,B=0,8$
 \end_inset
 
  a 
@@ -1752,7 +1926,7 @@ status open
 
 Najděte nejmenší možnou očekávanou délku kódového slova jakéhokoliv binárního
  kódu pro náhodný vektor 
-\begin_inset Formula $X,\, Y$
+\begin_inset Formula $X,\,Y$
 \end_inset
 
  s výše uvedeným rozdělením.
@@ -2497,7 +2671,7 @@ A) Markovova podmínka
 \begin_layout Standard
 \begin_inset Formula 
 \[
-P\left(X_{n}=s_{j}|X_{0}=s_{0},\, X_{1}=s_{1},\,\ldots,\, X_{n-1}=s_{i}\right)=P\left(X_{n}=s_{j}|X_{n-1}=s_{i}\right)=P_{ij}
+P\left(X_{n}=s_{j}|X_{0}=s_{0},\,X_{1}=s_{1},\,\ldots,\,X_{n-1}=s_{i}\right)=P\left(X_{n}=s_{j}|X_{n-1}=s_{i}\right)=P_{ij}
 \]
 
 \end_inset
@@ -2518,7 +2692,7 @@ B) Stacionární rozdělení
  je stacionární rozdělení, jestliže platí
 \begin_inset Formula 
 \[
-\pi*P=\pi\text{ (přesněji zapsáno: }\sum_{\text{all}\, i}\pi_{i}P_{ij}=\pi_{j}\text{)}
+\pi*P=\pi\text{ (přesněji zapsáno: }\sum_{\text{all}\,i}\pi_{i}P_{ij}=\pi_{j}\text{)}
 \]
 
 \end_inset
@@ -2573,7 +2747,7 @@ náhodný čas návratu
 
 \begin_inset Formula 
 \[
-\tau_{i}=\text{inf}\left\{ n\geq1:\, X_{n}=s_{i}\right\} \text{.}
+\tau_{i}=\text{inf}\left\{ n\geq1:\,X_{n}=s_{i}\right\} \text{.}
 \]
 
 \end_inset
@@ -2900,11 +3074,11 @@ Mějme Markovův řetězec
 
 \begin_layout Standard
 se dvěma absorbujícími stavy 
-\begin_inset Formula $\left(s_{1},\, s_{2}\right)$
+\begin_inset Formula $\left(s_{1},\,s_{2}\right)$
 \end_inset
 
  a dvěma neabsorbujícími stavy 
-\begin_inset Formula $\left(s_{2},\, s_{3}\right)$
+\begin_inset Formula $\left(s_{2},\,s_{3}\right)$
 \end_inset
 
 .
@@ -3366,11 +3540,11 @@ Mějme
 \end_inset
 
  nezávislých jevů 
-\begin_inset Formula $X_{1}=\text{Exp}\left(\lambda_{1}\right),\,\cdots,\, X_{n}=\text{Exp}\left(\lambda_{n}\right)$
+\begin_inset Formula $X_{1}=\text{Exp}\left(\lambda_{1}\right),\,\cdots,\,X_{n}=\text{Exp}\left(\lambda_{n}\right)$
 \end_inset
 
  a jev 
-\begin_inset Formula $Y=\text{min}\left(X_{1},\,\ldots,\, X_{n}\right)$
+\begin_inset Formula $Y=\text{min}\left(X_{1},\,\ldots,\,X_{n}\right)$
 \end_inset
 
 .
@@ -3678,7 +3852,7 @@ a
 
 .
  Určete rozdělení 
-\begin_inset Formula $Y=\text{min}\left\{ X_{1},\, X_{2}\right\} $
+\begin_inset Formula $Y=\text{min}\left\{ X_{1},\,X_{2}\right\} $
 \end_inset
 
 .
@@ -3734,7 +3908,7 @@ height "1pt"
 Budeme zkoumat 
 \begin_inset Formula 
 \[
-P\left(\text{min}\left\{ X_{1},\, X_{2}\right\} >k\right)=P\left(X_{1}>k,\, X_{2}>k\right)=P\left(X_{1}>k\right)P\left(X_{2}>k\right)=\ldots
+P\left(\text{min}\left\{ X_{1},\,X_{2}\right\} >k\right)=P\left(X_{1}>k,\,X_{2}>k\right)=P\left(X_{1}>k\right)P\left(X_{2}>k\right)=\ldots
 \]
 
 \end_inset
@@ -3768,7 +3942,7 @@ P\left(X>k\right)=\left(1-p\right)^{k}
 \begin_layout Standard
 Výsledek má stejný tvar jako funkce přežití geometrického rozdělení, tedy
  
-\begin_inset Formula $\text{min}\left\{ X_{1},\, X_{2}\right\} \sim Geom\left(p'\right)$
+\begin_inset Formula $\text{min}\left\{ X_{1},\,X_{2}\right\} \sim Geom\left(p'\right)$
 \end_inset
 
 , kde 
@@ -3959,7 +4133,7 @@ Pro výpočet stacionárního rozdělení použijeme GEM.
 \end_inset
 
  a doplníme o 
-\begin_inset Formula $\sum_{\text{all}\, i}=1$
+\begin_inset Formula $\sum_{\text{all}\,i}=1$
 \end_inset
 
 .
@@ -4193,7 +4367,7 @@ N=\rho*\frac{1}{1-\rho}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\lambda=140\, rps,\, T_{S}=5\, ms=5*\frac{1}{1000}\, s
+\lambda=140\,rps,\,T_{S}=5\,ms=5*\frac{1}{1000}\,s
 \]
 
 \end_inset
@@ -4205,7 +4379,7 @@ N=\rho*\frac{1}{1-\rho}
 Intenzita obsluhy
 \begin_inset Formula 
 \[
-\mu=\frac{1}{T_{S}}=\frac{1}{\frac{5}{1000}}=200\, rps
+\mu=\frac{1}{T_{S}}=\frac{1}{\frac{5}{1000}}=200\,rps
 \]
 
 \end_inset
@@ -4416,7 +4590,7 @@ Mějme
 \end_inset
 
  a 
-\begin_inset Formula $V=min\left\{ S,\, T\right\} $
+\begin_inset Formula $V=min\left\{ S,\,T\right\} $
 \end_inset
 
 .
@@ -4508,7 +4682,7 @@ A)
 
 \begin_layout Standard
 Nejprve musíme zjistit, jak je funkce 
-\begin_inset Formula $min\left\{ S,\, T\right\} $
+\begin_inset Formula $min\left\{ S,\,T\right\} $
 \end_inset
 
  rozdělena a jaké má parametry:
@@ -4517,7 +4691,7 @@ Nejprve musíme zjistit, jak je funkce
 \begin_layout Standard
 \begin_inset Formula 
 \[
-P\left(min\left\{ S,\, T\right\} >k\right)=P\left(S>k,\, T>k\right)=P\left(S>k\right)P\left(T>k\right)=\left(1-F_{S}\left(k\right)\right)*\left(1-F_{T}\left(k\right)\right)=\ldots
+P\left(min\left\{ S,\,T\right\} >k\right)=P\left(S>k,\,T>k\right)=P\left(S>k\right)P\left(T>k\right)=\left(1-F_{S}\left(k\right)\right)*\left(1-F_{T}\left(k\right)\right)=\ldots
 \]
 
 \end_inset
@@ -4549,7 +4723,7 @@ P\left(min\left\{ S,\, T\right\} >k\right)=P\left(S>k,\, T>k\right)=P\left(S>k\r
 
 \begin_layout Standard
 Nyní víme, že 
-\begin_inset Formula $min\left\{ S,\, T\right\} $
+\begin_inset Formula $min\left\{ S,\,T\right\} $
 \end_inset
 
  je rozděleno exponenciálně s parametrem 
