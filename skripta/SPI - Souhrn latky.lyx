@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \begin_preamble
 \usepackage{lmodern}
@@ -39,16 +41,16 @@
 \language_package babel
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 1
@@ -140,7 +142,7 @@ Souhrn látky
 \align center
 
 \size large
-červen 2015
+vytvořeno červen 2015, revize listopad 2016
 \end_layout
 
 \begin_layout Standard
@@ -160,6 +162,10 @@ target "https://github.com/illagrenan/MI-SPI_sourhn"
 \end_inset
 
 .
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -343,6 +349,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -426,6 +437,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -579,6 +595,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -653,6 +674,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -822,6 +848,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -918,7 +949,7 @@ centering
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="3">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -1181,6 +1212,10 @@ Pro spojité veličiny
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1212,6 +1247,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -1321,6 +1361,10 @@ F=\mathbb{P}(X\leq x_{i})=\intop_{-\infty}^{x}f_{x}\left(u\right)\text{d}u~\fora
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1380,6 +1424,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -1535,7 +1584,7 @@ centering
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="2">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
@@ -1680,7 +1729,7 @@ centering
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="left" valignment="top" width="2.5cm">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="4cm">
@@ -2104,7 +2153,7 @@ centering
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="4cm">
@@ -2441,6 +2490,10 @@ Entropie spojité veličiny
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2483,6 +2536,10 @@ H\left(X,Y\right)=-\sum_{i,j}p_{i,j}\log p_{i,j}
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2510,6 +2567,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -2550,6 +2612,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -2697,6 +2764,10 @@ Střední hodnota
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2785,6 +2856,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -2863,6 +2939,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3115,6 +3196,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3137,23 +3223,23 @@ Q & R\\
 \begin_inset Formula $P$
 \end_inset
 
- -- matice přechodů, 
+ – matice přechodů, 
 \begin_inset Formula $Q$
 \end_inset
 
- -- tranzientní stavy, 
+ – tranzientní stavy, 
 \begin_inset Formula $R$
 \end_inset
 
- -- rekurentní /absorbující/ stavy, 
+ – rekurentní /absorbující/ stavy, 
 \begin_inset Formula $1$
 \end_inset
 
- -- jednotková matice, 
+ – jednotková matice, 
 \begin_inset Formula $0$
 \end_inset
 
- -- matice nul)
+ – matice nul)
 \end_layout
 
 \end_inset
@@ -3173,6 +3259,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3241,6 +3332,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3322,6 +3418,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3583,6 +3684,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3632,7 +3738,7 @@ míra vytížení
 \begin_inset Formula $\lambda$
 \end_inset
 
- -- 
+ – 
 \series bold
 intenzita příchodů
 \series default
@@ -3663,7 +3769,7 @@ intenzita příchodů
 \begin_inset Formula $\mu$
 \end_inset
 
- -- 
+ – 
 \series bold
 intenzita obsluhy
 \series default
@@ -3671,7 +3777,7 @@ intenzita obsluhy
 \begin_inset Formula $T_{S}$
 \end_inset
 
- -- 
+ – 
 \series bold
 doba obsluhy
 \series default
@@ -3702,7 +3808,7 @@ N=\rho*\frac{1}{1-\rho}
 \begin_inset Formula $N$
 \end_inset
 
- -- průměrný celkový 
+ – průměrný celkový 
 \series bold
 počet požadavků
 \series default
@@ -3746,15 +3852,15 @@ N & = & \underbrace{N_{Q}}_{\text{Fronta}}+\underbrace{N_{S}}_{\text{Obsluha}}
 \begin_inset Formula $T$
 \end_inset
 
- -- celkový průměrný čas v systému, 
+ – celkový průměrný čas v systému, 
 \begin_inset Formula $T_{Q}$
 \end_inset
 
- -- průměrný čas ve frontě/čekání, 
+ – průměrný čas ve frontě/čekání, 
 \begin_inset Formula $T_{S}$
 \end_inset
 
- -- průměrný čas zpracování požadavku)
+ – průměrný čas zpracování požadavku)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3850,6 +3956,10 @@ Konfidenční intervaly
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3858,7 +3968,7 @@ Konfidenční intervaly
 \begin_inset Formula $\EuScript{Z}$
 \end_inset
 
- -- tabulky normálního rozdělení)
+ – tabulky normálního rozdělení)
 \end_layout
 
 \begin_layout Standard
@@ -3884,6 +3994,10 @@ Konfidenční intervaly
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3892,7 +4006,7 @@ Konfidenční intervaly
 \begin_inset Formula $\EuScript{T}$
 \end_inset
 
- -- tabulky Studentova 
+ – tabulky Studentova 
 \begin_inset Formula $\EuScript{T}$
 \end_inset
 
@@ -3977,6 +4091,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -4016,11 +4135,11 @@ S_{n}=\frac{a_{0}}{1-q}\text{ pro }\left|q\right|<1
 \begin_inset Formula $a_{0}$
 \end_inset
 
- -- první prvek, 
+ – první prvek, 
 \begin_inset Formula $q$
 \end_inset
 
- -- kvocient)
+ – kvocient)
 \end_layout
 
 \end_inset
@@ -4044,6 +4163,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
