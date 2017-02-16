@@ -1,3 +1,5 @@
+**(deprecated)** Novější dokument k SPI je na https://github.com/illagrenan/MI-SPI-SZZ.
+
 # Souhrn látky pro MI-SPI na ČVUT FIT #
 
 ## Chci se učit ##
